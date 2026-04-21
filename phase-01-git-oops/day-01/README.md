@@ -35,3 +35,23 @@
   - **Mixed reset** : Remove commit, files unstaged in working directory  
   - **Hard reset** : Remove commit, remove all files from directory  
 
+## For the Merge Conflict Resolve
+- Conflict generate when editing in to same file and same line with differnt branch
+- `Solve` Accept the any one PR Request(Merge) add to main branch with editor which using(Manually). After coommit the resolve file
+
+<<<<<<< HEAD
+
+
+
+Update this line for brnach main
+=======
+For the another branch update the existing file
+
+
+Update tile file for merge conflict with master 
+>>>>>>> master
+
+
+## Git Pull vs Git Fetch
+- Downloads and merge where in fetch  Downloads update from remote
+- Quick adding cureent branch where in fetch reviewing changes before merging
