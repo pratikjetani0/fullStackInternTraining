@@ -51,6 +51,18 @@ For the another branch update the existing file
 Update tile file for merge conflict with master 
 >>>>>>> master
 
+- After conflict resolve manually and for push into git hub i got issue :
+
+---
+PS D:\fullStackInternTraining-Pratik> git push origin main
+To https://github.com/pratikjetani0/fullStackInternTraining.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/pratikjetani0/fullStackInternTraining.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+---
 
 ## Git Pull vs Git Fetch
 - Downloads and merge where in fetch  Downloads update from remote
