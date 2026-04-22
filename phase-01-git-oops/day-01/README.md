@@ -37,10 +37,13 @@
 
 ## 🔹 Resetting Commits
 
-- `git reset` : Move branch [HEAD] pointer backward, optionally change files
+- `git reset` : Move branch [HEAD] pointer backward, optionally change files (Rolling back commits in Git )
   - **Soft reset** : Remove commit, files stay staged
   - **Mixed reset** : Remove commit, files unstaged in working directory
   - **Hard reset** : Remove commit, remove all files from directory
+
+## 🔹 Revert Commits
+- `git revert <commithash>` : Rolling back commits in Git (safe method) (for the production we used)
 
 ## For the Merge Conflict Resolve
 
