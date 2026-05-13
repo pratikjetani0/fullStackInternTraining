@@ -1,0 +1,41 @@
+
+
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.toast {
+  color: white;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  min-width: 250px;
+  animation: slideIn 0.3s ease;
+}
+
+.success {
+  background: green;
+}
+
+.error {
+  background: red;
+}
+
+.warning {
+  background: orange;
+}
+
+.info {
+  background: blue;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

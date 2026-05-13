@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background:  #1e272e;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+.main-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #6C5CE7, #8E7CFF);
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  width: fit-content;
+}
+
+/* left side  */
+.container {
+  background: linear-gradient(135deg, #6C5CE7, #8E7CFF);
+  padding: 20px;
+  border-radius: 12px;
+  width: 320px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  
+}
+
+/* right side  */
+.output {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  min-width: 350px;
+}
+
+.output table {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.container label {
+  display: inline;
+  margin-top: 10px;
+  font-weight: 600;
+  color: white;
+}
+
+.container input {
+  background: #f1f2f6;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.container input:focus {
+  outline: 2px solid #6C5CE7;
+  background: white;
+}
+
+.student-marks {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 12px 10px;
+}
+
+.student-marks input {
+  padding: 8px 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.2s;
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  background: #2d205d;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: medium;
+  border: none;
+  color: white;
+  box-shadow: 0 4px 0 #d5d5e3;
+}
+
+button:hover {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #2007e159;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+th {
+  background: linear-gradient(135deg, #6C5CE7, #8E7CFF);
+  color: white;
+  padding: 12px;
+  font-size: 15px;
+  text-align: center;
+}
+
+
+td {
+  padding: 12px;
+  text-align: center;
+  color: #333;
+}
+
+
+tr:nth-child(even) {
+  background: #f8f9ff;
+}
+
+
+tr:hover {
+  background: #eaeaff;
+  transition: 0.2s;
+}
+
+.container,
+.student-class-card,
+table {
+  transition: 0.3s;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+}
+
+/* how report look  */
+.student-class-card {
+  background: linear-gradient(135deg, #6C5CE7, #8E7CFF);
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  line-height: 1.6;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.student-class-card h3 {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.empty-state {
+  background: rgba(255, 255, 255, 0.08);
+  color: #dcdde1;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 15px;
+  border: 1px dashed rgba(255,255,255,0.2);
+}
+
+
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: white;
+  color: black;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.3s;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
