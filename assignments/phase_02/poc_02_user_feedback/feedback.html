@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Feedback</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="feedback-main">
+      <h1>All Feedback</h1>
+
+      <div class="container">
+        <!-- filtering  -->
+        <div class="filter-box">
+          <select id="filter-type">
+            <option value="all">All Feedback</option>
+            <option value="inquiry">Inquiry</option>
+            <option value="support">Support</option>
+            <option value="complaint">Complaint</option>
+            <option value="general">General</option>
+          </select>
+
+          <button id="filter-btn">Filter</button>
+        </div>
+        <!-- feedback table  -->
+        <table id="feedback-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Type</th>
+              <th>Message</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody id="feedback-body"></tbody>
+        </table>
+
+        <br />
+        <a href="index.html">Back to Form</a>
+      </div>
+    </div>
+
+    <script src="feedback.js"></script>
+  </body>
+</html>
