@@ -19,12 +19,21 @@ export const getStatusChartData = (tasks: Task[]) => {
   ];
 };
 
-export const getPriorityChartData = (tasks: Task[]) => {
-  const high = tasks.filter((task) => task.priority === "high").length;
 
-  const medium = tasks.filter((task) => task.priority === "medium").length;
+export const getPriorityChartData = (
+  tasks: Task[]
+) => {
+  const high = tasks.filter(
+    (task) => task.priority === "high"
+  ).length;
 
-  const low = tasks.filter((task) => task.priority === "low").length;
+  const medium = tasks.filter(
+    (task) => task.priority === "medium"
+  ).length;
+
+  const low = tasks.filter(
+    (task) => task.priority === "low"
+  ).length;
 
   return [
     {
