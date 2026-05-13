@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Student Result Processor</title>
+  </head>
+  <body>
+    <div class="app">
+      <h1>Student Result Processor</h1>
+
+      <div class="main-layout">
+        <!-- left side -->
+        <div class="container">
+          <label for="stu-input">Student Name :</label>
+          <input
+            type="text"
+            id="stu-input"
+            placeholder="enter student name.."
+          />
+          <div class="student-marks">
+            <label for="maths">Maths:</label>
+            <input type="number" min="0" max="100" id="maths" />
+
+            <label for="physics">Physics:</label>
+            <input type="number" min="0" max="100" id="physics" />
+
+            <label for="chemistry">Chemistry:</label>
+            <input type="number" min="0" max="100" id="chemistry" />
+
+            <label for="computer">Computer:</label>
+            <input type="number" min="0" max="100" id="computer" />
+          </div>
+          <button type="submit" onclick="addStudent()">Add student</button>
+          <button type="submit" onclick="showReport()">
+            Show Class Report
+          </button>
+
+          <!-- store result of student -->
+          <!-- <div id="result"></div> -->
+        </div>
+
+        <!-- right side -->
+        <div class="output">
+          <div id="student-table">
+            <div class="empty-state">No students added yet</div>
+          </div>
+          <div id="report">
+            <div class="empty-state">Class report will appear here</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

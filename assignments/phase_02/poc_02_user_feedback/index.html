@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Feedback & Contact Management System</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>User Feedback</h1>
+      <div class="container">
+        <form action="" id="feedback-form" novalidate>
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="form-fullname">Full Name</label>
+            <input
+              type="text"
+              name="fullname"
+              id="form-fullname"
+              placeholder="Enter your full name"
+              required
+            />
+            <small class="error"></small>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="form-email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="form-email"
+              placeholder="example@gmail.com"
+              required
+            />
+            <small class="error"></small>
+          </div>
+
+          <!-- Phone -->
+          <div class="form-group">
+            <label for="form-phone">Phone Number</label>
+            <input
+              type="tel"
+              id="form-phone"
+              inputmode="numeric"
+              placeholder="Enter 10-digit number"
+              maxlength="10"
+              required
+            />
+            <small class="error"></small>
+          </div>
+
+          <!-- Feedback Type -->
+          <div class="form-group">
+            <label for="form-feedback">Feedback Type</label>
+            <select id="form-feedback">
+              <option value="">-- Select Type --</option>
+              <option value="inquiry">Inquiry</option>
+              <option value="support">Support</option>
+              <option value="complaint">Complaint</option>
+              <option value="general">General</option>
+            </select>
+            <small class="error"></small>
+          </div>
+
+          <!-- Message -->
+          <div class="form-group">
+            <label for="form-message">Message</label>
+            <textarea
+              id="form-message"
+              rows="4"
+              placeholder="Write your message..."
+              required
+            ></textarea>
+            <small id="char-count">0 / 20 characters</small>
+            <small class="error"></small>
+          </div>
+
+          <!-- Checkbox -->
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="form-checkbox" required />
+            <label for="form-checkbox">I agree to terms</label>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" id="submit-btn">Submit</button>
+
+          <a href="./feedback.html" id="feddback-route">see all feedback</a>
+        </form>
+      </div>
+    </div>
+    <div id="success-box" class="hidden">
+      <div class="checkmark">✔</div>
+      <h2>Form Submitted Successfully</h2>
+      <button id="new-feedback-btn">Submit Another Feedback</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

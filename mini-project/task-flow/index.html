@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskFlow</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <h1>TaskFlow</h1>
+        <p>Manage your tasks efficiently</p>
+      </header>
+
+      <!-- Add Task Section -->
+      <section class="task-form">
+        <h2>Add New Task</h2>
+
+        <input type="text" id="taskTitle" placeholder="Task title" />
+
+        <textarea
+          id="taskDescription"
+          placeholder="Task description"
+        ></textarea>
+
+        <select id="taskPriority">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+
+        <select id="taskCategory">
+          <option value="study">Study</option>
+          <option value="work">Work</option>
+          <option value="personal">Personal</option>
+        </select>
+
+        <button id="addTaskBtn">Add Task</button>
+      </section>
+
+      <!-- Search + Filter -->
+      <!-- <section class="controls">
+        <input type="text" id="searchTask" placeholder="Search task..." />
+
+        <div class="filters">
+          <button data-filter="all">All</button>
+          <button data-filter="completed">Completed</button>
+          <button data-filter="pending">Pending</button>
+        </div>
+      </section> -->
+
+      <!-- Stats -->
+      <section class="stats">
+        <div>Total: <span id="totalTasks"></span></div>
+        <div>Completed: <span id="completedTasks"></span></div>
+        <div>Pending: <span id="pendingTasks"></span></div>
+      </section>
+
+      <!-- Task List -->
+      <section class="task-list-section">
+        <h2>Your Tasks</h2>
+
+        <ul id="taskList">
+          <!-- Tasks rendered here -->
+        </ul>
+      </section>
+    </div>
+    <script type="module" src="./dist/app.js"></script>
+  </body>
+</html>

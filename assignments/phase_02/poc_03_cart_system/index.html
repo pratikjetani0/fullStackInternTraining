@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart System</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- header  -->
+    <header class="header">
+      <div class="container header-content">
+        <h1 class="logo">Mini Shop</h1>
+
+        <div class="cart-indicator">
+          🛒 Cart
+          <span id="cart-count"></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container main-layout">
+      <!-- Products -->
+      <section class="products-section">
+        <div class="products-header">
+          <h2>Available Products</h2>
+
+          <div class="add-product">
+            <a href="./form.html">+ Add Product</a>
+          </div>
+        </div>
+
+        <!-- Products will be added here -->
+        <div id="product-list" class="product-grid"></div>
+      </section>
+
+      <!-- Cart Section -->
+      <aside class="cart-section">
+        <h2>Your Cart</h2>
+
+        <!-- Cart items added here -->
+        <div id="cart-items" class="cart-items">
+          <p class="empty-cart"></p>
+        </div>
+
+        <!-- Cart Summary -->
+        <div class="cart-summary">
+          <h3>Total: ₹<span id="cart-total"></span></h3>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+      </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Mini Shop © 2026</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
