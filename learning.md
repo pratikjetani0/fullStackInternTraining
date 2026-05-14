@@ -561,61 +561,109 @@ Here’s your updated daily progress with today’s actual work added. I cleaned
 - Learn Context API
 - Start next React POC
 
-
 ## 📅 Date: 2026-05-13
 
 ### 📚 Topics Learned
 
-* Improved **POC 2: Enhanced Todo & Productivity Tracker**
-* Built **Analytics Dashboard**
-* Integrated **Recharts** for data visualization
-* Improved dashboard layout architecture
+- Improved **POC 2: Enhanced Todo & Productivity Tracker**
+- Built **Analytics Dashboard**
+- Integrated **Recharts** for data visualization
+- Improved dashboard layout architecture
 
 ---
 
 ### 💡 Key Concepts
 
-* React Context API with `createContext`
-* Layout separation using shared app shell
-* Dynamic conditional styling in React
+- React Context API with `createContext`
+- Layout separation using shared app shell
+- Dynamic conditional styling in React
 
 ---
 
 ### 🧠 What I Understood Well
 
-* How Context API removes prop drilling
-* How custom hooks simplify context usage
-* How analytics data is transformed for charts
-
+- How Context API removes prop drilling
+- How custom hooks simplify context usage
+- How analytics data is transformed for charts
 
 ---
 
 ### ⚠️ Challenges Faced
 
-* Duplicate header/layout structure issue
-* Understanding chart data format
-
+- Duplicate header/layout structure issue
+- Understanding chart data format
 
 ---
 
 ### 🔍 How I Solved Them
 
-
-* Separated dashboard toolbar from app layout
-* Practiced chart data transformation logic
+- Separated dashboard toolbar from app layout
+- Practiced chart data transformation logic
 
 ---
 
 ### 📌 Pending Doubts
 
-* Best practices for scaling Context API
-* Optimizing re-renders in context-based apps
+- Best practices for scaling Context API
+- Optimizing re-renders in context-based apps
 
 ---
 
 ### 🚀 Next Plan
 
-* Complete dark mode polish across all components
-* Add category analytics chart
-* Refactor repeated styling logic
+- Complete dark mode polish across all components
+- Add category analytics chart
+- Refactor repeated styling logic
 
+## 📅 Date: 2026-05-14
+
+### 📚 Topics Learned
+
+- Learned **Context API, Redux, and Redux Toolkit**
+- Built **Theme Switcher using Context API** in POC2
+- Built **Todo App using Redux Toolkit**
+
+---
+
+### 💡 Key Concepts
+
+- `createContext`, Provider, `useContext`
+- Redux store, actions, reducers
+- `createSlice()` and `configureStore()`
+- Global state management patterns
+
+---
+
+### 🧠 What I Understood Well
+
+- How Context API works for shared state
+- Difference between Redux and Redux Toolkit
+- How dispatch updates global state
+
+---
+
+### ⚠️ Challenges Faced
+
+- Understanding Redux flow
+- Connecting store with React components
+
+---
+
+### 🔍 How I Solved Them
+
+- Practiced Todo example step by step
+- Compared Context API vs RTK implementation
+
+---
+
+### 📌 Pending Doubts
+
+- When to choose Context vs RTK
+- Advanced RTK patterns
+
+---
+
+### 🚀 Next Plan
+
+- Improve mini project using RTK
+- Practice async state management
