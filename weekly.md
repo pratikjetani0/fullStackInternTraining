@@ -220,3 +220,115 @@ Focused on:
 - Practice API integration in React
 - Strengthen routing and state management concepts
 
+## 📅 Week: (11/05/2026 - 15/05/2026)
+
+## ✅ Completed Tasks
+
+### React Router Dom
+
+- `Browser Router`
+- `Routes`
+- `Route`
+- `Outlet`
+
+### React State Management
+
+- Learned **Context API**
+- Implemented:
+  - `createContext`
+  - Provider setup
+  - `useContext`
+  - Global theme management
+- Built **Theme Switcher using Context API**
+
+---
+
+### Redux & Redux Toolkit
+
+- Learned Redux core concepts:
+  - Store
+  - Actions
+  - Reducers
+  - Dispatch flow
+
+- Learned **Redux Toolkit**
+
+- Practiced:
+  - `configureStore()`
+  - `createSlice()`
+  - Global state updates
+
+- Built **Todo App using Redux Toolkit**
+
+---
+
+### Authentication Flow Practice
+
+- Implemented **Signup/Login functionality**
+
+- Used **localStorage** for persistent auth state
+
+- Built:
+  - Login state persistence
+  - Logout functionality
+  - Conditional navbar rendering
+
+## 🔄 Work In Progress
+
+- Improving authentication architecture
+- Understanding advanced Redux Toolkit patterns
+- Structuring scalable global state management
+
+---
+
+## ⏳ Pending Tasks
+
+- Protected routes implementation
+- Async state management using Redux Toolkit
+- API integration with Redux
+- Profile dropdown enhancements
+
+---
+
+## 📈 Progress Summary
+
+### Major Achievements
+
+Completed:
+
+- **Context API implementation**
+- **Redux Toolkit Todo App**
+- **Custom Skelton**
+- **Conditional UI rendering based on auth state**
+
+Key improvement areas:
+
+- Better understanding of global state management
+- Improved React component communication
+- Stronger debugging for state-related issues
+
+---
+
+## ⚠️ Challenges / Blockers
+
+- Understanding Redux data flow initially
+- Connecting Redux store with components
+- Choosing between Context API and Redux for different use cases
+
+---
+
+## 🧑‍🏫 Mentor Feedback Applied
+
+Focused on:
+
+- Building concepts through implementation
+- Solving state management issues independently
+
+---
+
+## 🎯 Plan for Next Week
+
+- Learn async operations with Redux Toolkit
+- Build protected routing system
+- Improve authentication using Context/Redux
+- SQL try to complete

@@ -501,6 +501,68 @@ In chatbot if we add api, how we can implement that that AI response comes in li
 
 Here’s your updated daily progress with today’s actual work added. I cleaned up a few wording issues too so it reads more professionally.
 
+## 📅 Date: 2026-05-11
+
+### 📚 Topics Learned
+
+- Built **POC 1: Product Listing & Cart System**
+- API data sanitization
+- Props drilling
+- Dynamic routing with React Router DOM
+
+---
+
+### 💡 Key Concepts
+
+- React Router DOM with `Routes`, `Route`, and `Outlet`
+- State lifting
+- Prop drilling
+- localStorage data persistence
+- Conditional rendering
+- Skeleton loading improves UX over spinner
+- Code splitting importance for optimization
+
+---
+
+### 🧠 What I Understood Well
+
+- Routing in React using `BrowserRouter`, `Routes`, and `Route`
+- Cart add/update/remove logic
+- Wishlist toggle logic
+- How props pass data through components
+
+---
+
+### ⚠️ Challenges Faced
+
+- Understanding `Outlet`
+- Managing shared cart state
+- Handling API messy product data
+- Quantity update bug in cart
+
+---
+
+### 🔍 How I Solved Them
+
+- Moved shared state to `App.tsx`
+- Used filtering to sanitize API data
+- Learned through implementation and testing
+
+---
+
+### 📌 Pending Doubts
+
+- In chatbot, if API is connected, how to restrict AI responses to limited context only
+- How Context API works compared to prop drilling
+
+---
+
+### 🚀 Next Plan
+
+- Finish React course
+- Start more React POCs
+- Learn Context API
+
 ## 📅 Date: 2026-05-12
 
 ### 📚 Topics Learned
@@ -667,3 +729,63 @@ Here’s your updated daily progress with today’s actual work added. I cleaned
 
 - Improve mini project using RTK
 - Practice async state management
+
+## 📅 Date: 2026-05-15
+
+### 📚 Topics Learned
+
+- worked on redux todo - edit feature
+- Worked on **Authentication flow using localStorage**
+- Implemented **Signup/Login state persistence**
+- Built **conditional UI rendering based on auth state**
+
+---
+
+### 💡 Key Concepts
+
+- `localStorage.getItem()` / `setItem()`
+- Custom hooks for persistent state
+- Conditional rendering in React
+- Showing/hiding components based on login status
+- useEffect warning
+- Context vs Redux
+
+---
+
+### 🧠 What I Understood Well
+
+- Why use Redux(RTK)?
+- Managing auth state in React
+- Conditionally rendering Login/Signup buttons
+- Displaying profile info dynamically after login
+
+---
+
+### ⚠️ Challenges Faced
+
+- Calling setState synchronously within an effect
+- Handling UI updates after login/logout
+- Making sure navbar updates instantly
+
+---
+
+### 🔍 How I Solved Them
+
+- For effect used the key
+- Used custom `useLocalStorage` hook
+- Connected auth state with component rendering
+- Tested login/logout flow repeatedly
+
+---
+
+### 📌 Pending Doubts
+
+- Whether to use Context API or Redux for authentication
+
+---
+
+### 🚀 Next Plan
+
+- Add protected routes
+- Build profile dropdown functionality
+- Complete POC3
