@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+:root {
+  --bg: #323437;
+  --card: #2c2e31;
+  --hover: #3b3d42;
+
+  --text: #d1d0c5;
+  --muted: #646669;
+
+  --accent: #e2b714;
+  --accent-h: #f3c623;
+
+  --error: #ca4754;
+  --border: #4a4c50;
+
+  --btn: #e2b714;
+  --btn-h: #f0c419;
+  --btn-text: #323437;
+
+  --nav: #646669;
+  --nav-h: #d1d0c5;
+  --nav-a: #e2b714;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
