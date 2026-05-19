@@ -1,13 +1,12 @@
 import { Search, User, ShoppingBag, Heart } from "lucide-react";
-import type { CartItem, Product } from "../types";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+import type { RootState } from "../store/store";
 
-interface HeaderProps {
-  cart: CartItem[];
-  wishlist: Product[];
-}
+const Header = () => {
 
-const Header = ({ cart = [], wishlist }: HeaderProps) => {
+  const cart = useSelector((state: RootState) => state.cart);
+  const wishlist = useSelector((state: RootState) => state.wishlist);
   const navigate = useNavigate();
 
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
