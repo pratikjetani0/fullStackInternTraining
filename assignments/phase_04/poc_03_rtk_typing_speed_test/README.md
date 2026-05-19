@@ -1,75 +1,205 @@
-# React + TypeScript + Vite
+# TypeRush RTK
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern typing speed test application built with **React, TypeScript, Tailwind CSS, and Redux Toolkit**.
 
-Currently, two official plugins are available:
+TypeRush helps users improve typing speed, accuracy with real-time feedback, test history tracking, leaderboard ranking, and protected authentication flow.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This version is the **Redux Toolkit implementation** of the original TypeRush project.
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+# Live Features
 
-Note: This will impact Vite dev & build performances.
+## Authentication
 
-## Expanding the ESLint configuration
+- User Signup
+- User Login
+- Logout
+- Persistent authentication using localStorage
+- Protected routes
+- Redirect unauthenticated users to login page
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Typing Test
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Multiple test durations
+  - 15 sec
+  - 30 sec
+  - 60 sec
+  - 120 sec
+- Random paragraph generation
+- Live timer countdown
+- Real-time typing feedback
+- Character-by-character validation
+- Auto scrolling paragraph cursor
+- Restart test
+- New paragraph generation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## Performance Metrics
+
+- **WPM** (Words Per Minute)
+- **CPM** (Characters Per Minute)
+- **Accuracy**
+- **Mistakes**
+
+---
+
+## Result Management
+
+- Save test result
+- Prevent duplicate saves
+- Auto reset after save
+
+---
+
+## History Page
+
+- Date
+- Duration
+- WPM
+- Accuracy
+- Consistency placeholder
+
+History is stored per user.
+
+---
+
+## Leaderboard
+
+- Username
+- WPM
+- Accuracy
+- Ranking
+
+Sorted by highest WPM.
+
+---
+
+## State Management
+
+This project uses **Redux Toolkit** for centralized state management.
+
+### Auth Slice
+
+- Login
+- Logout
+- Current user
+- Authentication persistence
+
+---
+
+### Result Slice
+
+- Test results
+- Add result
+- Persist results
+
+---
+
+# Tech Stack
+
+## Frontend
+
+- React
+- TypeScript
+- Tailwind CSS
+- React Router DOM
+
+## State Management
+
+- Redux Toolkit
+- React Redux
+
+## Storage
+
+- LocalStorage
+
+# Project Structure
+
+```bash
+src/
+│
+├── components/
+│   ├── Header.tsx
+│   ├── ProtectedRoute.tsx
+│   ├── ResultScreen.tsx
+├── pages/
+│   ├── HistoryPage.tsx
+│   ├── HomePage.tsx
+│   ├── LeaderboardPage.tsx
+│   ├── LoginPage.tsx
+│   ├── NotFoundPage.tsx
+│   ├── SignupPage.tsx
+│   ├── TestPage.tsx
+├── routes/
+│   ├── AppRoutes.tsx
+├── store/
+│   ├── hooks.ts
+│   ├── store.ts
+│   └── slices/
+│       ├── authSlice.ts
+│       └── testSlice.ts
+│
+├── utils/
+├── constants/
+├── types/
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# Key Concepts Practiced
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Redux Toolkit
+
+- createSlice
+- configureStore
+- reducers
+- actions
+- centralized state
+
+---
+
+## React Concepts
+
+- Hooks
+- useEffect
+- useRef
+- Controlled inputs
+- Protected routing
+- Navigation state
+
+---
+
+# Installation
+
+```bash
+npm install
+npm run dev
 ```
+
+---
+
+## ScreenShot
+
+![Home page](./src/assets/home.png)
+![Test oage](./src//assets/test.png)
+![result screen](./src/assets/result.png)
+![history](./src/assets/history.png)
+![leaderboard](./src/assets/leaderboard.png)
+
+# Learning Outcome
+
+- Redux Toolkit architecture
+- State persistence
+- Authentication flow
+- Protected routes
+- Scalable React app structure
+
+---
+
+# Author
+
+**Pratik Jetani**
