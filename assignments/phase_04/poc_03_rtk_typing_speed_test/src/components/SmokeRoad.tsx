@@ -1,10 +1,9 @@
-import { motion } from "framer-motion";
+import type{ CSSProperties } from "react";
 
-// 1. Increased particle density and enlarged sizes to make the smoke trail thicker
 const particles = Array.from({ length: 30 }, (_, i) => ({
-  left: `${i * 3.3}%`, // Tighter spacing for a more continuous stroke
-  size: 30 + (i % 4) * 12, // Increased base and variance sizes (was 18 + i%4 * 6)
-  delay: i * 0.12,
+  left: `${i * 3.3}%`,
+  size: 30 + (i % 4) * 12,
+  delay: `${i * 0.12}s`,
 }));
 
 const SmokeRoad = () => {
@@ -18,28 +17,16 @@ const SmokeRoad = () => {
 
       {/* smoke all over */}
       {particles.map((particle, index) => (
-        <motion.div
+        <div
           key={index}
-          // 2. Changed blur-lg to blur-xl to create thicker, cloudier visual volumes
-          className="absolute bottom-2 rounded-full bg-white/25 blur-xl"
+          className="smoke-particle absolute bottom-2 rounded-full bg-white/25 blur-xl"
           style={{
             left: particle.left,
             width: `${particle.size}px`,
             height: `${particle.size}px`,
-          }}
-          animate={{
-            y: [0, -90],
-            // 3. Increased the initial starting opacity from 0.35 to 0.65 for a bolder stroke
-            opacity: [0.65, 0.3, 0],
-            scale: [1.0, 3.2], // Expanded scaling factor for broader dispersion
-            x: [0, 12, -12],
-          }}
-          transition={{
-            duration: 4.0, // Slowed down slightly so the smoke lingers longer in place
-            repeat: Infinity,
-            delay: particle.delay,
-            ease: "easeOut",
-          }}
+            // Type-safe custom property declaration
+            ["--particle-delay" as string]: particle.delay,
+          } as CSSProperties}
         />
       ))}
     </div>

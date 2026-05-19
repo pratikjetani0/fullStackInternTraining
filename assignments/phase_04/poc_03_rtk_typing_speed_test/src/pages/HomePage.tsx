@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAppSelector } from "../store/hooks";
 import KeyboardTitle from "../components/KeyboardTitle";
-import SmokeRoad from "../components/SmokeRoad";
+// import SmokeRoad from "../components/SmokeRoad";
 
 const HomePage = () => {
   const [selectedTime, setSelectedTime] = useState(60);
@@ -31,7 +31,7 @@ const HomePage = () => {
 
         <div className="relative flex flex-col items-center h-44 w-[760px] max-w-full mx-auto mb-6">
           <KeyboardTitle text="TYPERUSH" />
-          <SmokeRoad />
+          {/* <SmokeRoad /> */}
         </div>
 
         <p className="text-[var(--text)] text-xl leading-relaxed max-w-2xl mx-auto mb-10">

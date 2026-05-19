@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 type KeyboardTitleProps = {
   text: string;
 };
@@ -8,26 +6,18 @@ const KeyboardTitle = ({ text }: KeyboardTitleProps) => {
   return (
     <div className="absolute top-0 z-20 flex justify-center gap-2 flex-wrap mb-0">
       {text.split("").map((char, index) => (
-        <motion.div
-          key={index}
-          whileHover={{
-            y: 2,
-          }}
-          whileTap={{
-            y: 4,
-          }}
-          transition={{
-            type: "spring",
-            stiffness: 500,
-            damping: 25,
-          }}
-          className="relative cursor-pointer"
-        >
+        <div key={index} className="keyboard-key relative cursor-pointer">
           {/* key base */}
           <div className="absolute inset-0 translate-y-[4px] rounded-lg bg-zinc-950" />
 
+          <div className="spark-particle spark-top-left" />
+          <div className="spark-particle spark-top-right" />
+          <div className="spark-particle spark-bottom-left" />
+          <div className="spark-particle spark-bottom-right" />
+
           {/* key top */}
-          <div className="relative flex items-center justify-center
+          <div
+            className="key-top relative flex items-center justify-center
             w-14 h-14 md:w-16 md:h-16
             rounded-lg
             bg-gradient-to-b from-zinc-800 to-zinc-950
@@ -41,7 +31,7 @@ const KeyboardTitle = ({ text }: KeyboardTitleProps) => {
               {char}
             </span>
           </div>
-        </motion.div>
+        </div>
       ))}
     </div>
   );

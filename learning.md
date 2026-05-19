@@ -861,3 +861,66 @@ Here’s your updated daily progress with today’s actual work added. I cleaned
 ### 🚀 Next Plan
 
 - Complete POC3 polish
+
+## 📅 Date: 2026-05-19
+
+### 📚 Topics Learned
+
+- Migrated **TypeRush** from custom hook state management to **Redux Toolkit**
+- Configured Redux store
+- Created and integrated:
+  - **Auth Slice**
+  - **Result Slice**
+- Added **mechanical keyboard sound feedback** for correct keypress
+
+---
+
+### 💡 Key Concepts
+
+- Redux store architecture
+- Slice-based state management
+- `createSlice()`
+- Reducers and actions
+- Typed hooks (`useAppDispatch`, `useAppSelector`)
+- Browser audio handling in React
+- Audio playback reset using:
+  - `pause()`
+  - `currentTime`
+  - `play()`
+
+---
+
+### 🧠 What I Understood Well
+
+- Why Redux Toolkit is useful for centralized state
+- Difference between custom hooks and Redux state management
+- Result state management using slices
+
+---
+
+### ⚠️ Challenges Faced
+
+- Understanding why Redux was needed when custom hooks already worked
+- Debugging hidden textarea behavior
+- Understanding Redux vs React Query differences
+
+---
+
+### 🔍 How I Solved Them
+
+- Compared local hook state vs global Redux state flow
+- Corrected hidden textarea styling issues
+- Mapped app state responsibilities to proper Redux slices
+
+---
+
+### 📌 Pending Doubts
+
+- Async Redux logic
+- When Redux Toolkit should be preferred over React Query
+
+---
+
+### 🚀 Next Plan
+
+- Start Phase_05 : Database

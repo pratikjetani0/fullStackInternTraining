@@ -110,7 +110,7 @@ const TestPage = () => {
       }
     }
 
-    // if expected is space, only allow real space
+    // if there is space, only allow real space
     if (expectedChar === " " && typedChar !== " ") {
       return;
     }
