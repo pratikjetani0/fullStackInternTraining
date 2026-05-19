@@ -17,50 +17,19 @@ const HomePage = ({
   onToggleWishlist,
   wishlist,
 }: HomePageProps) => {
-  // const [products, setProducts] = useState<Product[]>([]);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
-  // const [loading, setLoading] = useState(true);
 
-  const {
-    data = [],
-    isLoading,
-    error,
-  } = useQuery({
+  const { data, isLoading, error } = useQuery({
     queryKey: ["products"],
     queryFn: fetchProducts,
   });
-  
 
-  const products = data.filter((product) => {
-    return (
-      product.category.name.toLowerCase() === "clothes" &&
-      product.title.length > 6 &&
-      product.images?.[0] &&
-      !product.images[0].includes("placehold.co")
-    );
-  });
+  const clothingCategories = ["mens-shirts", "mens-shoes", "mens-watches"];
 
-  // useEffect(() => {
-  //   async function loadProducts() {
-  //     setLoading(true);
-
-  //     const data = await fetchProducts();
-
-  //     const clothesProducts = data.filter((product) => {
-  //       return (
-  //         product.category.name.toLowerCase() === "clothes" &&
-  //         product.title.length > 6 &&
-  //         product.images?.[0] &&
-  //         !product.images[0].includes("placehold.co")
-  //       );
-  //     });
-
-  //     setProducts(clothesProducts);
-  //     setLoading(false);
-  //   }
-
-  //   loadProducts();
-  // }, []);
+  const products =
+    data?.products?.filter((product) => {
+      return clothingCategories.includes(product.category);
+    }) || [];
 
   const handleOpenProduct = (product: Product) => {
     setSelectedProduct(product);

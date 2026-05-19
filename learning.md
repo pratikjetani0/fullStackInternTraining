@@ -789,3 +789,75 @@ Here’s your updated daily progress with today’s actual work added. I cleaned
 - Add protected routes
 - Build profile dropdown functionality
 - Complete POC3
+
+## 📅 Date: 2026-05-18
+
+### 📚 Topics Learned
+
+- Built working **Test page**, **History page**, **Leaderboard page**, **result screen UI** for POC3
+- Calculated and displayed:
+  - WPM
+  - CPM
+  - Accuracy
+  - Mistakes
+- Implemented per logged-in user history
+- Sorted leaderboard by WPM
+- Created and practiced:
+  - Auth Slice
+  - Result Slice
+  - Store setup
+  - `createSlice`
+  - Actions
+  - Reducers
+- Understood **RTK vs React Query**
+- Learned **Client State vs Server State**
+
+---
+
+### 💡 Key Concepts
+
+- Redux Toolkit state flow
+- Random data rendering
+- `reduce()` usage
+- User-based filtering
+- Result calculation logic
+- Slice architecture
+
+---
+
+### 🧠 What I Understood Well
+
+- Managing auth state with Redux
+- Result state handling
+- Showing user-specific history
+- Leaderboard sorting logic
+
+---
+
+### ⚠️ Challenges Faced
+
+- Result calculations
+- History filtering per user
+- Best score extraction
+- State structure planning
+
+---
+
+### 🔍 How I Solved Them
+
+- Used Redux slices for state separation
+- Used `reduce()` for best score
+- Used sorting for leaderboard ranking
+- Connected auth state with result history
+
+---
+
+### 📌 Pending Doubts
+
+- Advanced optimization for state management
+
+---
+
+### 🚀 Next Plan
+
+- Complete POC3 polish

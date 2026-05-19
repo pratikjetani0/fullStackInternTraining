@@ -5,10 +5,7 @@ export interface Product {
   price: number;
   description: string;
   images: string[];
-  category: {
-    id: number;
-    name: string;
-  };
+  category: string;
 }
 
 // CartItem Interface

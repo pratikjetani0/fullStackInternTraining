@@ -2,7 +2,11 @@ import axios from "axios";
 import type { Product } from "../types/index.js";
 import { Toast } from "../utils/Toast.js";
 
-const API_URL = "https://api.escuelajs.co/api/v1/products";
+interface ProductsResponse {
+  products: Product[];
+}
+
+const API_URL = "https://dummyjson.com/products?limit=100";
 
 const toast = new Toast();
 
@@ -28,9 +32,9 @@ const toast = new Toast();
 // }
 
 // AXIOS USED
-export async function fetchProducts(): Promise<Product[]> {
+export async function fetchProducts(): Promise<ProductsResponse> {
   try {
-    const response = await axios.get<Product[]>(API_URL);
+    const response = await axios.get<ProductsResponse>(API_URL);
     return response.data;
   } catch (error) {
     if (axios.isAxiosError(error)) {
@@ -39,6 +43,6 @@ export async function fetchProducts(): Promise<Product[]> {
       toast.show("Something went wrong", "error");
     }
 
-    return [];
+    return { products: [] };
   }
 }
