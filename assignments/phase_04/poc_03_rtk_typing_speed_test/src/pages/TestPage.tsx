@@ -25,6 +25,7 @@ const TestPage = () => {
 
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const cursorRef = useRef<HTMLSpanElement>(null);
+  const keySound = useRef<HTMLAudioElement | null>(null);
 
   const currentUser = useAppSelector((state) => state.auth.currentUser);
   const dispatch = useAppDispatch();
@@ -65,6 +66,15 @@ const TestPage = () => {
     return () => clearInterval(timer);
   }, [isStarted, timeLeft]);
 
+  // FOR THE SOUND
+  useEffect(() => {
+    const audio = new Audio("/sounds/key.wav");
+    audio.volume = 0.25;
+    audio.preload = "auto";
+
+    keySound.current = audio;
+  }, []);
+
   // SCROLL THE LONG PARAGRPAH TEXT
   useEffect(() => {
     if (cursorRef.current) {
@@ -90,6 +100,15 @@ const TestPage = () => {
     const currentIndex = value.length - 1;
     const typedChar = value[currentIndex];
     const expectedChar = paragraph[currentIndex];
+
+    if (typedChar === expectedChar) {
+      if (keySound.current) {
+        keySound.current.pause();
+        keySound.current.currentTime = 0;
+
+        keySound.current.play().catch(() => {});
+      }
+    }
 
     // if expected is space, only allow real space
     if (expectedChar === " " && typedChar !== " ") {
@@ -259,7 +278,7 @@ const TestPage = () => {
           placeholder={isFinished ? "Test finished" : "Start typing here..."}
           disabled={isFinished}
           autoFocus
-          className="absolute opacity-0 pointer-events-nonebg-[var(--card)] border border-[var(--border)] rounded-xl p-5 text-[var(--text)] placeholder:text-[var(--muted)] outline-none focus:border-[var(--accent)] focus:shadow-[0_0_12px_rgba(226,183,20,0.15)] resize-none transition-all duration-300"
+          className="absolute opacity-0 pointer-events-none bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 text-[var(--text)] placeholder:text-[var(--muted)] outline-none focus:border-[var(--accent)] focus:shadow-[0_0_12px_rgba(226,183,20,0.15)] resize-none transition-all duration-300"
         />
 
         {/* Bottom Controls */}
