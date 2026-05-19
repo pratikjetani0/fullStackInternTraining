@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAppSelector } from "../store/hooks";
+import KeyboardTitle from "../components/KeyboardTitle";
+import SmokeRoad from "../components/SmokeRoad";
 
 const HomePage = () => {
   const [selectedTime, setSelectedTime] = useState(60);
@@ -27,9 +29,10 @@ const HomePage = () => {
           Improve speed. Accuracy. Consistency.
         </p>
 
-        <h1 className="text-6xl font-bold text-[var(--accent)] mb-6">
-          TypeRush
-        </h1>
+        <div className="relative flex flex-col items-center h-44 w-[760px] max-w-full mx-auto mb-6">
+          <KeyboardTitle text="TYPERUSH" />
+          <SmokeRoad />
+        </div>
 
         <p className="text-[var(--text)] text-xl leading-relaxed max-w-2xl mx-auto mb-10">
           Challenge your typing skills with real-time feedback, performance

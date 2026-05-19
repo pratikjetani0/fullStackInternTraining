@@ -10,6 +10,7 @@ import {
 import { useLocation } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../store/hooks";
 import { addResult } from "../store/slices/resultsSlice";
+import { motion } from "framer-motion";
 
 const TestPage = () => {
   const location = useLocation();
@@ -84,13 +85,22 @@ const TestPage = () => {
       setIsStarted(true);
     }
 
-    if (value.length <= paragraph.length) {
-      setTypedText(value);
+    if (value.length > paragraph.length) return;
 
-      if (value.length === paragraph.length) {
-        setIsFinished(true);
-        setIsStarted(false);
-      }
+    const currentIndex = value.length - 1;
+    const typedChar = value[currentIndex];
+    const expectedChar = paragraph[currentIndex];
+
+    // if expected is space, only allow real space
+    if (expectedChar === " " && typedChar !== " ") {
+      return;
+    }
+
+    setTypedText(value);
+
+    if (value.length === paragraph.length) {
+      setIsFinished(true);
+      setIsStarted(false);
     }
   };
 
@@ -144,8 +154,18 @@ const TestPage = () => {
 
   // FOCUS IN TO TEXT AREA
   useEffect(() => {
-    textareaRef.current?.focus();
-  }, []);
+    const handleKeyDown = () => {
+      if (!isFinished) {
+        textareaRef.current?.focus();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isFinished]);
 
   // AFTER FNISHED TEST THE RESULT SCREEN SHOW
   if (isFinished) {
@@ -183,7 +203,7 @@ const TestPage = () => {
 
         {/* Paragraph Display */}
         <div
-          className={`bg-[var(--card)] rounded-2xl pt-10 border text-2xl leading-relaxed pl-20 pr-20 tracking-wide relative transition-all duration-500 overflow-hidden h-[150px] 
+          className={`bg-[var(--card)] rounded-2xl pt-10 border cursor-text text-3xl leading-relaxed pl-20 pr-20 tracking-wide relative transition-all duration-500 overflow-hidden h-[180px] 
             ${
               isStarted
                 ? "border-[var(--accent)] shadow-[0_0_20px_rgba(226,183,20,0.15)]"
@@ -210,8 +230,14 @@ const TestPage = () => {
               }
 
               return (
-                <span
+                <motion.span
                   key={index}
+                  layout
+                  transition={{
+                    type: "spring",
+                    stiffness: 500,
+                    damping: 35,
+                  }}
                   className={className}
                   ref={isCurrentCursor ? cursorRef : null}
                 >
@@ -219,7 +245,7 @@ const TestPage = () => {
                     <span className="absolute left-0 top-1 h-[70%] w-[2px] bg-[var(--accent)] animate-pulse rounded-full" />
                   )}
                   {char}
-                </span>
+                </motion.span>
               );
             })}
           </div>
@@ -232,7 +258,8 @@ const TestPage = () => {
           onChange={handleTextarea}
           placeholder={isFinished ? "Test finished" : "Start typing here..."}
           disabled={isFinished}
-          className="w-full h-36 bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 text-[var(--text)] placeholder:text-[var(--muted)] outline-none focus:border-[var(--accent)] focus:shadow-[0_0_12px_rgba(226,183,20,0.15)] resize-none transition-all duration-300"
+          autoFocus
+          className="absolute opacity-0 pointer-events-nonebg-[var(--card)] border border-[var(--border)] rounded-xl p-5 text-[var(--text)] placeholder:text-[var(--muted)] outline-none focus:border-[var(--accent)] focus:shadow-[0_0_12px_rgba(226,183,20,0.15)] resize-none transition-all duration-300"
         />
 
         {/* Bottom Controls */}
