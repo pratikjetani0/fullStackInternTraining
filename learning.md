@@ -924,3 +924,73 @@ Here’s your updated daily progress with today’s actual work added. I cleaned
 ### 🚀 Next Plan
 
 - Start Phase_05 : Database
+
+## 📅 Date: 2026-05-20
+
+### 📚 Topics Learned
+
+- Started learning **SQL (Structured Query Language)**
+- Learned fundamentals of:
+  - Databases
+  - DBMS (Database Management Systems)
+  - Relational vs Non-Relational Databases
+- Understood: Primary Keys, Foreign Keys and Composite Keys
+
+- Practiced basic SQL operations: `CREATE TABLE`, `INSERT`, `SELECT`, `UPDATE`, `DELETE`, `ALTER TABLE`, `DROP TABLE`
+
+---
+
+### 💡 Key Concepts
+
+- Difference between databases and DBMS
+- CRUD Operations: Create, Read, Update, Delete
+- Relational database structure
+- Relationships using foreign keys
+- SQL as:
+  - DQL
+  - DDL
+  - DML
+  - DCL
+- Importance of primary keys in unique identification
+
+---
+
+### 🧠 What I Understood Well
+
+- How relational databases organize data into tables
+- Difference between primary key and foreign key
+- How SQL queries interact with databases
+- Basic table creation and data insertion flow
+
+---
+
+### ⚠️ Challenges Faced
+
+- Understanding relationships between multiple tables
+- Remembering SQL syntax and constraints
+- Understanding composite keys and foreign keys
+
+---
+
+### 🔍 How I Solved Them
+
+- Practiced creating sample tables and inserting records
+- Compared SQL tables with real-world examples like student and company databases
+- Repeated CRUD query practice to improve syntax understanding
+
+---
+
+### 📌 Pending Doubts
+
+- SQL joins (`INNER JOIN`, `LEFT JOIN`, etc.)
+- Advanced query writing
+- Database normalization
+- Real-world database design practices
+
+---
+
+### 🚀 Next Plan
+
+- Practice SQL queries daily
+- Start PostgreSQL hands-on practice
+- Build small database projects using SQL
