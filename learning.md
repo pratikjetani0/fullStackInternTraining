@@ -994,3 +994,78 @@ Here’s your updated daily progress with today’s actual work added. I cleaned
 - Practice SQL queries daily
 - Start PostgreSQL hands-on practice
 - Build small database projects using SQL
+
+## 📅 Date: 2026-05-21
+
+### 📚 Topics Learned
+
+- Learned advanced SQL querying concepts
+- Practiced:
+  - `SELECT`, `WHERE`, `ORDER BY`, `LIMIT`
+  - `GROUP BY`, `HAVING`
+  - Aggregate functions: `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`
+  - `LIKE`, wildcards, `DISTINCT`, aliases
+  - `UNION` and nested queries (subqueries)
+- Learned different types of SQL JOINs:
+  - `INNER JOIN`
+  - `LEFT JOIN`
+  - `RIGHT JOIN`
+  - `FULL OUTER JOIN`
+- Understood:
+  - Foreign key delete actions (`ON DELETE SET NULL`, `CASCADE`)
+  - Transactions (`BEGIN`, `COMMIT`, `ROLLBACK`, `SAVEPOINT`)
+  - Views, Indexing, Constraints, Triggers
+  - Custom Functions and Stored Procedures
+  - ER Diagrams and database relationships
+
+---
+
+### 💡 Key Concepts
+
+- Data filtering and sorting using SQL queries
+- Aggregation and grouped data handling
+- Table relationships using JOINs
+- Difference between `WHERE` and `HAVING`
+- Transactions and ACID properties
+- Database schema design using ER diagrams
+
+---
+
+### 🧠 What I Understood Well
+
+- Writing filtered and sorted queries
+- Using aggregate functions with `GROUP BY`
+- Basic JOIN operations between tables
+- Understanding transactions and rollback flow
+
+---
+
+### ⚠️ Challenges Faced
+
+- Understanding complex JOINs and subqueries
+- Remembering trigger and procedure syntax
+- Confusion between views, functions, and stored procedures
+
+---
+
+### 🔍 How I Solved Them
+
+- Practiced queries on sample databases
+- Compared JOIN outputs visually
+- Repeated CRUD and aggregation query practice
+- Created small relational database examples for better understanding
+
+---
+
+### 📌 Pending Doubts
+
+- Advanced JOIN optimization
+- Database normalization in real projects
+- Advanced PostgreSQL features
+
+---
+
+### 🚀 Next Plan
+
+- Build mini database projects
+- Learn PostgreSQL deeply

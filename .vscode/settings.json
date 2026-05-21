@@ -9,6 +9,16 @@
       "name": "postgres",
       "username": "postgres",
       "database": "test_sql_db"
+    },
+    {
+      "ssh": "Disabled",
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "ERP_system",
+      "database": "erp_system",
+      "username": "postgres"
     }
   ]
 }

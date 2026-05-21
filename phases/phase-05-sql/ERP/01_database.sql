@@ -1,0 +1,3 @@
+CREATE DATABASE ERP_System;
+
+USE ERP_System;

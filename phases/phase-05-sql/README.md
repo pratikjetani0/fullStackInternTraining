@@ -194,8 +194,6 @@ SQL has a formal specification, but different RDBMS implement it **slightly diff
 
 ---
 
-
-
 ## Chapter 5: Data Types in SQL
 
 When creating tables, every column must have a defined **data type**.
@@ -569,12 +567,10 @@ WHERE supplier_name LIKE '%Label%';
 
 -- Find employees born in October (month = 10)
 -- Date format: YYYY-MM-DD → 4 chars, dash, then '10'
-SELECT * FROM employee
-WHERE birth_date LIKE '____-10%';
+SELECT * FROM employee e WHERE e.birth_day::TEXT LIKE '____-10%';
 
 -- Find employees born in February
-SELECT * FROM employee
-WHERE birth_date LIKE '____-02%';
+SELECT * FROM employee WHERE birth_day::TEXT LIKE '____-02%';
 
 -- Find clients that are schools
 SELECT * FROM client
