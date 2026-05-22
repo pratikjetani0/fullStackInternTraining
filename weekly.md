@@ -332,3 +332,161 @@ Focused on:
 - Build protected routing system
 - Improve authentication using Context/Redux
 - SQL try to complete
+
+## 📅 Week: (18/05/2026 - 22/05/2026)
+
+## ✅ Completed Tasks
+
+### POC3 - Typing Speed Test
+
+- Completed core functionality for **Typing Speed Test (POC3)**
+
+- Implemented:
+  - Typing logic
+  - WPM calculation
+  - CPM calculation
+  - Accuracy tracking
+  - Mistake counting
+  - Result screen generation
+
+- Added **Redux Toolkit** integration:
+  - `Auth Slice`
+  - `Result Slice`
+
+- Managed:
+  - Global authentication state
+  - Typing result persistence
+  - User-based result handling
+
+---
+
+### Previous POCs Improvements
+
+- Solved multiple issues from earlier POCs
+- Refactored some components for cleaner structure
+
+---
+
+### SQL Learning
+
+- Started learning **Core SQL**
+- Learned fundamentals of:
+  - Databases
+  - DBMS
+  - Relational databases
+  - SQL syntax and query flow
+- Practiced:
+  - `SELECT`
+  - `WHERE`
+  - `ORDER BY`
+  - `GROUP BY`
+  - `HAVING`
+  - `JOINS`
+  - `SUBQUERIES`
+  - Aggregate functions
+
+- Learned advanced concepts:
+  - SQL Functions
+  - Triggers
+  - Procedures
+
+- Solved:
+  - **50+ SQL practice questions**
+
+---
+
+### PostgreSQL
+
+- Started learning **PostgreSQL**
+
+- Worked on:
+  - PostgreSQL setup
+  - Database connections
+  - Query execution using different tools
+- Practiced:
+  - Table creation
+  - Constraints
+  - Data insertion
+  - Query execution
+- Solved:
+  - **20+ PostgreSQL practice questions**
+
+---
+
+### SQL Problem Solving
+
+- Started solving **SQL LeetCode problems**
+
+- Practiced:
+  - Joins-based problems
+  - Aggregation problems
+  - Filtering queries
+  - Date-based SQL questions
+
+- Solved:
+  - **15+ SQL LeetCode questions**
+
+---
+
+## 🔄 Work In Progress
+
+- Improving Redux Toolkit architecture
+- Learning advanced SQL queries
+- Improving PostgreSQL understanding
+- Practicing SQL problem-solving consistency
+
+---
+
+## ⏳ Pending Tasks
+
+- Connect APIs with Redux Toolkit
+- Learn advanced PostgreSQL concepts
+- Continue SQL LeetCode practice
+- Database design and normalization
+
+---
+
+## 📈 Progress Summary
+
+### Major Achievements
+
+Completed:
+
+- **POC3 Typing Speed Test functionality**
+- **Redux Toolkit integration with auth and result slices**
+- **50+ Core SQL practice questions**
+- **20+ PostgreSQL questions**
+- **15+ SQL LeetCode problems**
+
+Key improvement areas:
+
+- Better understanding of Redux state architecture
+- Improved debugging skills
+- Stronger SQL query writing
+- Better problem-solving approach in SQL
+
+---
+
+## ⚠️ Challenges / Blockers
+
+- Understanding complex SQL joins initially
+- Managing Redux state flow efficiently
+- Debugging state synchronization issues
+
+---
+
+## 🧑‍🏫 Mentor Feedback Applied
+
+Focused on:
+
+- Practicing more SQL questions consistently
+- Improving problem-solving independently
+
+---
+
+## 🎯 Plan for Next Week
+
+- Learn advanced PostgreSQL concepts
+- Continue SQL LeetCode practice
+- Improve authentication architecture
+- Strat Node.js Phase

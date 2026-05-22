@@ -1069,3 +1069,70 @@ Here’s your updated daily progress with today’s actual work added. I cleaned
 
 - Build mini database projects
 - Learn PostgreSQL deeply
+
+## 📅 Date: 2026-05-22
+
+### 📚 Topics Learned
+
+- Started learning PostgreSQL in depth
+- Practiced PostgreSQL setup and query execution
+- Solved:
+  - 50+ Core SQL practice questions
+  - 20+ PostgreSQL practice questions
+- Started solving PostgreSQL LeetCode questions
+
+- Practiced:
+  - Joins
+  - Aggregate functions
+  - Subqueries
+  - Filtering and sorting queries
+  - Grouping data using `GROUP BY`
+  - PostgreSQL syntax and database operations
+
+---
+
+### 💡 Key Concepts
+
+- PostgreSQL query execution
+- SQL problem-solving approach
+- Writing optimized filtering and aggregation queries
+
+---
+
+### 🧠 What I Understood Well
+
+- Basic PostgreSQL workflow
+- Core SQL query writing
+- Joins and aggregation concepts
+- Solving beginner-level SQL problems
+
+---
+
+### ⚠️ Challenges Faced
+
+- PostgreSQL-specific syntax differences
+- LeetCode SQL problem understanding
+
+---
+
+### 🔍 How I Solved Them
+
+- Practiced repeated SQL queries
+- Solved questions on sample databases
+- Compared query outputs for better understanding
+- Focused on query logic step-by-step
+
+---
+
+### 📌 Pending Doubts
+
+- Advanced PostgreSQL optimization
+- Advanced LeetCode SQL problems
+
+---
+
+### 🚀 Next Plan
+
+- Continue PostgreSQL practice
+- Solve more SQL LeetCode questions
+- Build small database practice projects
