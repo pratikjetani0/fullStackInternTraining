@@ -69,6 +69,74 @@ Learn TypeScript and apply strong type-safe practices.
 
 ---
 
+## Phase_04 : React Fundamentals & POCs
+
+Learn modern frontend development using React.js and build scalable UI applications.
+
+### Topics Covered:
+
+- React fundamentals
+- JSX
+- Components and Props
+- State and Event Handling
+- Hooks : useState, useEffect, useRef, useContext
+- Conditional Rendering
+- Form Handling
+- React Router
+- API Integration
+- Context API
+- Redux Fundamentals
+- Redux Toolkit
+- Component Architecture
+- State Management Concepts
+
+### Mini Projects:
+
+- Chat bot application
+- Todo App using Redux Toolkit
+
+### POCs:
+
+- Product Listing & Cart System Application using API
+- Enhanced Todo & Productivity Tracker(Theme Switcher context api App)
+- TypeRush Application(Typing Speed Test App)
+
+---
+
+## Phase_05 : SQL & PostgreSQL Development
+
+Learn relational databases, SQL querying, and PostgreSQL concepts through practical implementation.
+
+### Topics Covered:
+
+- Database fundamentals
+- DBMS concepts
+- Relational vs Non-relational databases
+- SQL fundamentals
+- PostgreSQL setup and workflow
+- CRUD operations
+- Table relationships
+- Primary Keys and Foreign Keys
+- Composite Keys
+- Constraints
+- Joins
+- Aggregation functions
+- GROUP BY and HAVING
+- Subqueries
+- Transactions
+- Triggers
+- Views
+- Functions
+- Procedures
+- Indexes
+- ER Diagram concepts
+
+### POCs:
+
+- E-Commerce Order & Inventory Management System
+
+---
+
 ## Tech Stack Used
 
 - **Frontend:** JavaScript, TypeScript, React.js
@@ -80,11 +148,37 @@ Learn TypeScript and apply strong type-safe practices.
 
 ## Setup Instructions
 
+### Clone Repository
+
+```bash
+git clone <repository-url>
+```
+
+### Navigate to Project Folder
+
+```bash
+cd <project-name>
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run the Application
+
+```bash
+npm run dev
+```
+
 ## Current Status
 
 - Phase 01 : ✅ Completed
 - Phase 02 : ✅ Completed
 - Phase 03 : ✅ Completed
-- Phase 04 : ⌛ In Progress..
+- Phase 04 : ✅ Completed
+- Phase 05 : ✅ Completed
+- Phase 06 : ⌛ In Progress..
 
 ## Known Issues
