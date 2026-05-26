@@ -1136,3 +1136,68 @@ Here’s your updated daily progress with today’s actual work added. I cleaned
 - Continue PostgreSQL practice
 - Solve more SQL LeetCode questions
 - Build small database practice projects
+
+## 📅 Date: 2026-05-25
+
+### 📚 Topics Learned
+
+- Built an E-Commerce Order Management System using PostgreSQL
+- Practiced real-world database design and schema creation
+- Implemented:
+  - CRUD operations
+  - Joins and aggregation queries
+  - Transactions
+  - Triggers
+  - Functions
+  - Procedures
+  - Views
+  - Indexes
+
+---
+
+### 💡 Key Concepts
+
+- PostgreSQL database design
+- Entity relationships and foreign keys
+- Business logic implementation using PL/pgSQL
+- Query optimization using indexes
+- Workflow automation using procedures and triggers
+
+---
+
+### 🧠 What I Understood Well
+
+- Database schema creation
+- Relationships between tables
+- Writing complex SQL queries
+- Functions, procedures, and triggers
+- Transaction handling and audit logging
+
+---
+
+### ⚠️ Challenges Faced
+
+- Managing complex relationships
+- Writing trigger and procedure logic
+- Understanding transaction workflows
+- PostgreSQL PL/pgSQL syntax
+
+---
+
+### 🔍 How I Solved Them
+
+- Broke complex logic into smaller steps
+- Tested triggers and procedures multiple times
+- Improved understanding through repeated implementation
+
+---
+
+### 📌 Pending Doubts
+
+- Advanced PostgreSQL optimization
+
+---
+
+### 🚀 Next Plan
+
+- start learning node.js
