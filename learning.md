@@ -1201,3 +1201,144 @@ Here’s your updated daily progress with today’s actual work added. I cleaned
 ### 🚀 Next Plan
 
 - start learning node.js
+
+## 📅 Date: 2026-05-26
+
+### 📚 Topics Learned
+
+- Started learning Node.js and Express.js
+- Understood server-side JavaScript execution using Node.js
+- Learned:
+  - Event Loop
+  - Blocking vs Non-Blocking operations
+  - Modules in Node.js
+  - CommonJS and ES6 modules
+  - Built-in modules: `fs`, `path`, `os`, `http`, `child_process`
+- Created basic HTTP servers using Node.js
+- Learned URL handling and HTTP methods
+- Started building routes using Express.js
+
+---
+
+### 💡 Key Concepts
+
+- Asynchronous programming and callbacks
+- Event-driven architecture
+- Request-response cycle
+- Express.js routing
+
+---
+
+### 🧠 What I Understood Well
+
+- Difference between synchronous and asynchronous operations
+- Working of the Event Loop
+- Using Node.js core modules
+- Creating servers with `http`
+- Basic Express.js routing and route parameters
+
+---
+
+### ⚠️ Challenges Faced
+
+- Understanding Event Loop flow
+- Difference between CommonJS and ES Modules
+- Managing file system operations
+
+---
+
+### 🔍 How I Solved Them
+
+- Practiced multiple server examples
+- Explored built-in modules with small programs
+- Repeatedly practiced routing and HTTP methods
+
+---
+
+### 📌 Pending Doubts
+
+- Advanced middleware usage in Express.js
+- Error handling patterns in Node.js
+
+---
+
+### 🚀 Next Plan
+
+- Learn Express.js middleware
+- Build REST APIs with CRUD operations
+- Connect Node.js with PostgreSQL database
+
+## 📅 Date: 2026-05-27
+
+### 📚 Topics Learned
+
+- Practiced REST API development using Express.js
+- Implemented: `GET`, `POST`, `PUT`, `DELETE` routes
+- Learned route parameters and multiple route handling
+- Used Postman for API testing
+- Learned Express Middleware concepts
+- Practiced:
+  - Built-in middleware (`express.json()`)
+  - Custom middleware
+  - Third-party middleware (`morgan`)
+- Learned asynchronous programming in JavaScript
+- Practiced:
+  - Callbacks
+  - Promises
+  - Async/Await
+  - Event Loop and Microtask Queue
+- Connected Node.js application with PostgreSQL using `pg`
+- Built API endpoints with PostgreSQL integration
+- Learned schema and table creation using Node.js
+
+---
+
+### 💡 Key Concepts
+
+- REST API architecture
+- CRUD operations with Express.js
+- Middleware flow in Express.js
+- PostgreSQL connection pooling
+- SQL query execution from Node.js
+- Schema-based database structure
+
+---
+
+### 🧠 What I Understood Well
+
+- API route creation in Express.js
+- Request and response handling
+- Difference between callbacks, promises, and async/await
+- Middleware execution flow
+- PostgreSQL connection setup
+
+---
+
+### ⚠️ Challenges Faced
+
+- Handling async database operations
+- Understanding middleware flow
+- Database connection configuration
+
+---
+
+### 🔍 How I Solved Them
+
+- Tested APIs using Postman
+- Debugged async code step-by-step
+- Referred to middleware execution flow
+- Practiced PostgreSQL queries with Express.js
+
+---
+
+### 📌 Pending Doubts
+
+- Advanced error handling middleware
+- Authentication with JWT
+- Database transaction handling in APIs
+
+---
+
+### 🚀 Next Plan
+
+- Learn authentication and authorization
