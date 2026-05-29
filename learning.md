@@ -1342,3 +1342,158 @@ Here’s your updated daily progress with today’s actual work added. I cleaned
 ### 🚀 Next Plan
 
 - Learn authentication and authorization
+
+## 📅 Date: 2026-05-28
+
+### 📚 Topics Learned
+
+- Connected PostgreSQL database using TypeORM `DataSource`
+- Practiced Entity-based database modeling with TypeORM decorators
+- Implemented CRUD APIs using Express.js and PostgreSQL
+- Practiced:
+  - `GET` API for fetching customer data
+  - `POST` API for inserting customer data
+  - `PUT` API for updating customer data
+  - `DELETE` API for removing customer data
+- Practiced error handling using `try-catch`
+- Improved backend folder structure and route organization concepts
+
+---
+
+### 💡 Key Concepts
+
+- TypeORM `Entity` and `Repository`
+- PostgreSQL integration with TypeORM
+- CRUD API architecture
+- Express.js routing
+- Async database operations
+- Schema-based database structure
+- REST API response handling
+
+---
+
+### 🧠 What I Understood Well
+
+- Database connection setup with `DataSource`
+- Repository methods like:
+  - `find()`
+  - `create()`
+  - `save()`
+  - `findOneBy()`
+  - `remove()`
+- API route handling in Express.js
+- Basic error handling using `try-catch`
+
+---
+
+### ⚠️ Challenges Faced
+
+- Understanding TypeORM workflow
+- Entity and schema configuration
+- Updating and deleting records properly
+- Organizing backend folders and routes
+
+---
+
+### 🔍 How I Solved Them
+
+- Practiced CRUD APIs multiple times
+- Tested APIs using Postman
+- Referred to TypeORM repository methods
+- Used environment variables for database configuration
+
+---
+
+### 📌 Pending Doubts
+
+- Advanced TypeORM relationships (`OneToMany`, `ManyToOne`)
+- Validation using middleware
+
+---
+
+### 🚀 Next Plan
+
+- Implement middleware-based validation
+- Create proper backend architecture using:
+  - Routes
+  - Controllers
+  - Services
+  - Middleware
+  - Config
+
+## 📅 Date: 2026-05-29
+
+### 📚 Topics Learned
+
+- Start POC1
+- Learned scalable backend architecture with proper folder structure
+- Implemented CRUD operations using PostgreSQL and Express.js
+- Practiced REST API development with modular route handling
+- Used PostgreSQL connection pooling with `pg`
+- Learned service-based backend architecture
+- Implemented:
+  - Controllers
+  - Routes
+  - Services/Models
+  - Middleware
+  - Database configuration
+- Learned centralized error handling middleware
+- Implemented request validation using `Zod`
+- Learned password hashing using `bcrypt`
+
+---
+
+### 💡 Key Concepts
+
+- REST API architecture
+- CRUD operations with PostgreSQL
+- PostgreSQL connection pooling
+- Middleware flow in Express.js
+- Input validation using Zod
+- Password hashing with bcrypt
+
+---
+
+### 🧠 What I Understood Well
+
+- Route handling using Express Router
+- Controller and service separation
+- PostgreSQL query execution using `pg`
+- Input validation using Zod middleware
+- Password hashing using bcrypt
+- Database connection setup using Pool
+- Async database operations with async/await
+
+---
+
+### ⚠️ Challenges Faced
+
+- Handling async database queries
+- Separating controller and service logic properly
+- Input validation using Zod
+- Password hashing workflow
+
+---
+
+### 🔍 How I Solved Them
+
+- Practiced CRUD APIs multiple times
+- Debugged API responses using Postman
+- Tested validation middleware with invalid inputs
+- Referred to Express middleware execution concepts
+
+---
+
+### 📌 Pending Doubts
+
+- Role-based authorization
+
+---
+
+### 🚀 Next Plan
+
+- Learn JWT authentication and authorization
+- Add role-based access control
+- Learn advanced PostgreSQL concepts
+
+---
