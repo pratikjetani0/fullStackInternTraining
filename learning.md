@@ -1497,3 +1497,68 @@ Here’s your updated daily progress with today’s actual work added. I cleaned
 - Learn advanced PostgreSQL concepts
 
 ---
+
+## 📅 Date: 2026-06-01
+
+### 📚 Topics Learned
+
+- Continued POC1 Backend Development using Node.js, Express.js, PostgreSQL, and TypeORM
+- Designed a scalable backend folder structure following industry practices
+- Learned TypeORM Migration workflow
+- Created and executed multiple database migrations
+- Practiced:
+  - Creating migration files
+  - Running migrations
+  - Reverting migrations
+  - Updating database schema through migrations
+- Implemented middleware architecture for:
+  - Error Handling
+  - Validation
+
+---
+
+### 💡 Key Concepts
+
+- Layered Backend Architecture
+- TypeORM Migrations
+- Express Middleware Flow
+- Validation and Error Handling
+
+---
+
+### 🧠 What I Understood Well
+
+- Creating and managing TypeORM entities
+- How migrations track database changes
+- Difference between migration `up()` and `down()` methods
+- Organizing modules independently inside backend applications
+- Middleware execution flow in Express.js
+
+---
+
+### ⚠️ Challenges Faced
+
+- Understanding migration workflow
+- Tracking which files are affected after schema changes
+
+---
+
+### 🔍 How I Solved Them
+
+- Practiced creating and running multiple migrations
+- Studied migration-generated schema changes
+
+---
+
+### 📌 Pending Doubts
+
+- Advanced migration strategies in production
+
+---
+
+### 🚀 Next Plan
+
+- Implement JWT Authentication
+- Add Role-Based Authorization
+- Build Authentication Module
+- Learn Advanced TypeORM Relationships

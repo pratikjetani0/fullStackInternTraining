@@ -3,7 +3,7 @@ import { z } from "zod";
 // import Joi from "joi";
 
 // Joi SCHEMA
-// const userSchema = Joi.object({
+// const userS  chema = Joi.object({
 //   name: Joi.string().min(3).max(20).required(),
 //   email: Joi.string().email().required(),
 // });
@@ -12,9 +12,14 @@ import { z } from "zod";
 const createUserSchema = z.object({
   name: z
     .string()
+    .trim()
     .min(3, "Name must be at least 3 characters")
     .max(20, "Name cannot exceed 20 characters"),
-  email: z.string().email("Invalid email format"),
+    
+  email: z
+    .email("Invalid email format")
+    .transform((email) => email.toLowerCase()),
+
   password: z.string().min(6, "Password must be at least 6 characters long"),
 });
 
@@ -45,7 +50,6 @@ export const validateCreateUser = (
 ) => {
   const result = createUserSchema.safeParse(req.body);
 
- 
   if (!result.success) {
     return res.status(400).json({
       status: 400,
@@ -72,5 +76,3 @@ export const validateUpdateUser = (
 
   next();
 };
-
-
