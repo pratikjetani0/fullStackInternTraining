@@ -490,3 +490,140 @@ Focused on:
 - Continue SQL LeetCode practice
 - Improve authentication architecture
 - Strat Node.js Phase
+
+## 📅 Week: (25/05/2026 - 29/05/2026)
+
+## ✅ Completed Tasks
+
+### PostgreSQL Development
+
+- Built a complete **E-Commerce Order Management System** using PostgreSQL.
+- Worked with:
+  - CRUD Operations
+  - Joins & Aggregation Queries
+  - Views
+  - Indexes
+  - Triggers
+  - Functions
+  - Stored Procedures
+  - Transactions
+
+---
+
+### Node.js & Express.js Learning
+
+- Started learning **Node.js** and **Express.js**.
+- Understood:
+  - Event Loop
+  - Asynchronous Programming
+  - Blocking vs Non-Blocking Operations
+  - CommonJS and ES Modules
+  - Node.js Core Modules
+- Built HTTP servers and explored request-response handling.
+- Learned Express routing and middleware concepts.
+
+---
+
+### REST API Development
+
+- Developed REST APIs using Express.js.
+- Implemented: `GET`, `POST`, `PUT`, `DELETE`
+- Practiced API testing using Postman.
+- Connected Node.js applications with PostgreSQL using `pg`.
+- Executed SQL queries directly from backend APIs.
+
+---
+
+### TypeORM Learning
+
+- Started working with **TypeORM** and PostgreSQL.
+- Learned:
+  - DataSource Configuration
+  - Entities
+  - Repositories
+  - Entity Decorators
+- Built CRUD APIs using TypeORM.
+- Practiced database modeling using Entity classes.
+- Performed database operations using repository methods.
+
+---
+
+### Validation & Security
+
+- Started **POC1 Backend Development**.
+- Implemented request validation using **Zod**.
+- Added centralized error handling middleware.
+- Learned password hashing using **bcrypt**.
+- Improved API response handling and error management.
+
+---
+
+## 💡 Key Concepts Learned
+
+- PostgreSQL Database Design
+- Transactions, Triggers & Procedures
+- Node.js Event Loop & Async Programming
+- Express.js Middleware Flow
+- REST API Architecture
+- PostgreSQL Integration with Node.js
+- TypeORM Entities & Repositories
+- Backend Layered Architecture
+- Input Validation using Zod
+- Password Security using bcrypt
+
+---
+
+## 📈 Major Achievements
+
+- Full PostgreSQL E-Commerce Database Project
+- Node.js Fundamentals
+- Express.js REST API Development
+- PostgreSQL Integration with Node.js
+- TypeORM CRUD Implementation
+- Validation Middleware using Zod
+- Password Hashing using bcrypt
+
+---
+
+## 🔄 Work In Progress
+
+- Building POC1 backend features
+- Learning authentication and authorization
+- Understanding TypeORM relationships
+
+---
+
+## ⏳ Pending Tasks
+
+- JWT Authentication
+- Role-Based Authorization
+- Refresh Token Implementation
+- TypeORM Relationships
+
+---
+
+## ⚠️ Challenges / Blockers
+
+- Understanding TypeORM workflow and repositories
+- Managing async database operations
+- Implementing validation and error handling correctly
+
+---
+
+## 🧑‍🏫 Mentor Feedback Applied
+
+Focused on:
+
+- Writing cleaner and modular backend code
+- Improving debugging and problem-solving skills
+
+---
+
+## 🎯 Plan for Next Week
+
+- Complete POC1 Backend Development
+- Implement JWT Authentication & Authorization
+- Add Role-Based Access Control
+- Learn Advanced TypeORM Relationships
+- Explore Database Transactions
+- Improve API Security Practices
