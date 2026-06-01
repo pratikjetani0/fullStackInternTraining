@@ -1,4 +1,4 @@
-import { type QueryResult } from "pg";
+import { type QueryResult } from "../../node_modules/@types/pg/index.js";
 import pool from "../config/db.js";
 import { type User } from "../types/user.js";
 import bcrypt from "bcrypt";
