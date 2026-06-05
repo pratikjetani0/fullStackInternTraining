@@ -1562,3 +1562,272 @@ Here’s your updated daily progress with today’s actual work added. I cleaned
 - Add Role-Based Authorization
 - Build Authentication Module
 - Learn Advanced TypeORM Relationships
+
+## 📅 Date: 2026-06-02
+
+### 📚 Topics Learned
+
+- Continued POC1 Development
+- Implemented Authentication and Authorization system
+- Integrated **bcrypt** for password hashing and password comparison
+- Implemented **JWT (JSON Web Token)** authentication
+- Learned JWT token generation (`sign`) and verification (`verify`)
+- Built complete Authentication Module using:
+  - Register API
+  - Login API
+  - Authentication Middleware
+- Separated application routes based on user roles:
+  - User Routes
+  - Admin Routes
+- Implemented Role-Based Access Control (RBAC)
+- Restricted:
+  - Get All Users → Admin Only
+  - Delete User → Admin Only
+
+---
+
+### 💡 Key Concepts
+
+- Password Hashing with bcrypt
+- Password Verification
+- JWT Authentication Flow
+- Access Token Generation
+- Authentication Middleware
+- Role-Based Authorization (RBAC)
+
+---
+
+### 🧠 What I Understood Well
+
+- How bcrypt hashes and compares passwords securely
+- JWT token creation and validation process
+- Difference between Authentication and Authorization
+- Middleware flow for securing APIs
+- How role-based access control protects sensitive resources
+
+---
+
+### ⚠️ Challenges Faced
+
+- Understanding JWT authentication flow from login to protected routes
+- Managing user roles across different endpoints
+
+---
+
+### 🔍 How I Solved Them
+
+- Practiced hashing and comparing passwords using bcrypt
+- Tested role-based permissions with different user accounts
+
+---
+
+### 📌 Pending Doubts
+
+- Token expiration and renewal strategies
+
+---
+
+### 🚀 Next Plan
+
+- Implement Refresh Token mechanism
+- Add Logout functionality with token invalidation
+
+## 📅 Date: 2026-06-03
+
+### 📚 Topics Learned
+
+- Started Designing HRMS System
+- Designed and implemented User Management Module
+- Implemented Role Management and Permission Management
+- Learned Role-Based Access Control (RBAC) architecture using:
+  - Roles
+  - Permissions
+  - Role Permissions
+  - User Roles
+  - User Permission Overrides
+
+- Implemented Employee Management Module
+- Designed employee master data structure using:
+  - Employee Profile
+  - Personal Details
+  - Work Details
+  - Identification Details
+  - Bank Details
+  - Experience Details
+  - Skills Management
+
+- Implemented many-to-many relationship between Employees and Skills
+- Designed Organization Management Module:
+  - Departments
+  - Designations
+
+---
+
+### 💡 Key Concepts
+
+- User Management
+- Role & Permission Management
+- Role-Based Access Control (RBAC)
+- User Permission Override
+- Employee Master Data Design
+
+---
+
+### 🧠 What I Understood Well
+
+- How RBAC controls system access using roles and permissions
+- How employee data can be separated into multiple related tables
+
+---
+
+### ⚠️ Challenges Faced
+
+- Understanding permission inheritance from roles to users
+- Designing employee-related tables without data duplication
+
+---
+
+### 🔍 How I Solved Them
+
+- Created RBAC flow diagrams and mapped permissions to roles
+- Normalized employee data into separate modules
+
+---
+
+### 📌 Pending Doubts
+
+- Strategies for caching permissions in large-scale applications
+
+---
+
+### 🚀 Next Plan
+
+- Refactor Employee Module
+- Implement Leave Management System
+- Implement Asset Management System
+
+---
+
+## 📅 Date: 2026-06-04
+
+### 📚 Topics Learned
+
+- Continued Designing HRMS System
+- Refactored Employee Management Module
+- Optimized employee data structure using JSON-based storage for flexible data management
+- Implemented Leave Management Module
+  - Leave Types
+  - Leave Rules
+  - Leave Eligibility Rules
+  - Leave Balances
+  - Leave Applications
+  - Leave Approval Process
+- Implemented Asset Management Module
+  - Asset Registration
+  - Asset History Tracking
+
+---
+
+### 💡 Key Concepts
+
+- Employee Data Refactoring
+- JSON Data Storage
+- Leave Policy Management
+- Leave Eligibility Rules
+- Asset Tracking System
+
+---
+
+### 🧠 What I Understood Well
+
+- How flexible employee information can be managed using structured JSON fields
+- How leave policies are configured and enforced
+- How leave balances and carry-forward rules work
+
+---
+
+### ⚠️ Challenges Faced
+
+- Designing dynamic leave eligibility rules
+- Managing carry-forward policies across different employee categories
+
+---
+
+### 🔍 How I Solved Them
+
+- Created rule-based workflow diagrams for leave processing
+
+---
+
+### 📌 Pending Doubts
+
+- Automating leave balance calculations and yearly resets
+
+---
+
+### 🚀 Next Plan
+
+- Implement Document Management Module
+- Implement Job Portal Workflow
+- Implement Announcement Management Module
+
+---
+
+## 📅 Date: 2026-06-05
+
+### 📚 Topics Learned
+
+- Continued Designing HRMS System
+- Implemented Document Management Module
+  - Employee Documents
+  - Organization Documents
+  - Signed Documents
+
+- Implemented Job Portal Workflow Module
+  - Job Posting
+  - Candidate Application
+  - Interview Scheduling
+  - Interview Feedback
+  - Offer Management
+  - Employee Conversion
+
+- Implemented Announcement Management Module
+
+---
+
+### 💡 Key Concepts
+
+- Document Management System
+- Job Portal Workflow
+- Announcement Management
+
+---
+
+### 🧠 What I Understood Well
+
+- How employee and organization documents are managed securely
+- Complete recruitment process from application to employee onboarding
+
+---
+
+### ⚠️ Challenges Faced
+
+- Designing recruitment workflow with multiple status transitions
+
+---
+
+### 🔍 How I Solved Them
+
+- Mapped recruitment stages into structured workflow states
+
+---
+
+### 📌 Pending Doubts
+
+- Document versioning and storage optimization strategies
+
+---
+
+### 🚀 Next Plan
+
+- Add audit logging and activity tracking
