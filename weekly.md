@@ -627,3 +627,178 @@ Focused on:
 - Learn Advanced TypeORM Relationships
 - Explore Database Transactions
 - Improve API Security Practices
+
+## 📅 Week: (01/06/2026 - 05/06/2026)
+
+## ✅ Completed Tasks
+
+- Continued POC1 Backend Development using Node.js, Express.js, PostgreSQL, and TypeORM.
+- Designed a scalable backend folder structure following industry practices.
+
+### TypeORM Development
+
+- Learned and implemented TypeORM Migration workflow.
+- Created and executed multiple database migrations.
+- Practiced:
+  - Creating migration files
+  - Running migrations
+  - Updating database schema through migrations
+
+---
+
+### Authentication & Authorization
+
+- Implemented complete Authentication and Authorization system.
+- Integrated bcrypt for:
+  - Password Hashing
+  - Password Comparison
+
+- Implemented JWT Authentication:
+  - Token Generation
+  - Token Verification
+  - Authentication Middleware
+
+- Built Authentication Module:
+  - User Registration
+  - User Login
+
+- Implemented Role-Based Access Control (RBAC).
+
+---
+
+### HRMS System Design & Architecture
+
+- Started designing a complete Human Resource Management System (HRMS).
+
+- Implemented RBAC architecture using:
+  - Roles
+  - Permissions
+  - User Roles
+  - Role Permissions
+  - User Permission Overrides
+
+---
+
+### Employee Management System
+
+- Employee Profile
+- Personal Details
+- Work Details
+- Identification Details
+- Bank Details
+- Experience Details
+- Skills Management
+
+---
+
+### Leave Management System
+
+- Leave Types
+- Leave Rules
+- Leave Eligibility Rules
+- Leave Balances
+- Leave Applications
+- Leave Approval Workflow
+
+---
+
+### Asset Management System
+
+- Asset Allocation
+- Asset History Tracking
+
+---
+
+### Document Management System
+
+- Implemented:
+  - Employee Documents
+  - Organization Documents
+  - Signed Documents
+
+---
+
+### Recruitment & Job Portal Workflow
+
+- Job Posting
+- Candidate Applications
+- Interview Scheduling
+- Interview Feedback
+- Offer Management
+- Employee Conversion
+
+---
+
+## 💡 Key Concepts Learned
+
+- Layered Backend Architecture
+- TypeORM Migrations
+- Express Middleware Flow
+- Validation and Error Handling
+- JWT Authentication
+- Password Hashing with bcrypt
+- Authentication vs Authorization
+- Role-Based Access Control (RBAC)
+- Permission Inheritance
+- Employee Master Data Design
+- JSON-Based Data Storage
+- Leave Eligibility Rules
+
+---
+
+## 📈 Major Achievements
+
+- Designed Scalable Backend Architecture for POC1
+- Implemented TypeORM Migration Workflow
+- Built Complete Authentication & Authorization Module
+- Implemented JWT-Based Security
+- Implemented Role-Based Access Control (RBAC)
+- Designed Complete HRMS Database Architecture
+- Implemented Employee Management Module
+- Implemented Leave Management Module
+- Implemented Asset Management Module
+- Implemented Document Management Module
+- Designed End-to-End Recruitment Workflow
+
+---
+
+## 🔄 Work In Progress
+
+- HRMS System Refinement
+- HRMS Workflow Enhancements
+
+---
+
+## ⏳ Pending Tasks
+
+- Refresh Token Implementation
+- Logout Functionality with Token Invalidation
+- Audit Logging System
+
+---
+
+## ⚠️ Challenges / Blockers
+
+- Understanding TypeORM Migration Workflow
+- Tracking Schema Changes Across Migrations
+- Understanding JWT Authentication Flow
+- Managing User Roles and Permissions
+- Designing Employee Data Without Duplication
+- Designing Dynamic Leave Eligibility Rules
+- Managing Leave Carry-Forward Policies
+- Designing Recruitment Workflow State Transitions
+
+---
+
+## 🧑‍🏫 Mentor Feedback Applied
+
+- Writing cleaner and modular backend code
+- Improving debugging and problem-solving skills
+
+---
+
+## 🎯 Plan for Next Week
+
+- Implement Refresh Token Mechanism
+- Add Logout Functionality
+- Product backend routes and conteroller
