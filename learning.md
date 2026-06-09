@@ -1831,3 +1831,75 @@ Here’s your updated daily progress with today’s actual work added. I cleaned
 ### 🚀 Next Plan
 
 - Add audit logging and activity tracking
+
+## 📅 Date: 2026-06-08
+
+### 📚 Topics Learned
+
+- Completed POC1 Backend Development
+
+- Implemented Product Management Module
+  - Create Product API
+  - Get All Products API
+  - Get Single Product API
+  - Update Product API
+  - Delete Product API
+
+- Implemented Cart Management Module
+  - Add Product to Cart
+  - Get User Cart with Product Details
+  - Update Cart Item Quantity
+  - Remove Cart Item
+  - Clear Entire Cart
+
+- Learned Seeder Purpose and Use Cases
+- Executed Seeders for Initial Data Population
+
+- Generated Migration Files from Entity Changes
+- Executed Migration Scripts
+
+---
+
+### 💡 Key Concepts
+
+- Product CRUD Operations
+- Shopping Cart Management
+- Database Seeders
+- TypeORM Migrations
+
+---
+
+### 🧠 What I Understood Well
+
+- Complete Product and Cart workflow implementation using Express.js, PostgreSQL, and TypeORM
+- How seeders help populate initial application data
+- Relationship handling between entities in TypeORM
+- Managing database schema changes through migration scripts
+
+---
+
+### ⚠️ Challenges Faced
+
+- Handling Product and Cart entity relationships correctly
+- Managing cart item updates while maintaining data consistency
+- Understanding seeders generation and execution workflow
+
+---
+
+### 🔍 How I Solved Them
+
+- Tested CRUD operations using different scenarios and edge cases
+- Used seeders to verify database initialization and application behavior
+
+---
+
+### 📌 Pending Doubts
+
+- Best practices for production-level seeding strategies
+
+---
+
+### 🚀 Next Plan
+
+- Improve API testing and documentation
+- Satrt next phase
