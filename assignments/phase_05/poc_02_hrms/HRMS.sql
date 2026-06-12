@@ -756,6 +756,64 @@ CREATE TABLE asset_history (
         REFERENCES employees(id)
 );
 
+
+-- TICKET FOR ONLY THE ASSET MANAGEMENT
+CREATE TABLE tickets (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+
+    ticket_number VARCHAR(50) NOT NULL UNIQUE,
+
+    asset_id UUID NOT NULL,
+
+    employee_id UUID NOT NULL,
+
+    assigned_to_employee_id UUID,
+
+    subject VARCHAR(255) NOT NULL,
+
+    description TEXT NOT NULL,
+
+    priority VARCHAR(20)
+        NOT NULL
+        DEFAULT 'MEDIUM'
+        CHECK (
+            priority IN (
+                'LOW',
+                'MEDIUM',
+                'HIGH'
+            )
+        ),
+
+    status VARCHAR(30)
+        NOT NULL
+        DEFAULT 'OPEN'
+        CHECK (
+            status IN (
+                'OPEN',
+                'IN_PROGRESS',
+                'RESOLVED',
+                'CLOSED'
+            )
+        ),
+
+    note TEXT,
+
+    closed_at TIMESTAMP,
+
+    created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMP NOT NULL DEFAULT NOW(),
+
+    FOREIGN KEY (asset_id)
+        REFERENCES assets(id),
+
+    FOREIGN KEY (employee_id)
+        REFERENCES employees(id),
+
+    FOREIGN KEY (assigned_to_employee_id)
+        REFERENCES employees(id)
+);
+
+
 --=============================
 --DOCUMENT MANAGEMENT
 --=============================

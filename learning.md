@@ -1903,3 +1903,129 @@ Here’s your updated daily progress with today’s actual work added. I cleaned
 
 - Improve API testing and documentation
 - Satrt next phase
+
+## 📅 Date: 2026-06-09
+
+### 📚 Topics Learned
+
+- Started NestJS Learning Phase
+- Explored NestJS Project Structure
+- Learned Core NestJS Concepts:
+  - Modules
+  - Controllers
+  - Services
+
+- Read NestJS Official Documentation
+- Started Learning Prisma ORM Integration with NestJS
+- Explored Prisma Setup and Database Connection Configuration
+
+---
+
+### 💡 Key Concepts
+
+- NestJS Architecture
+- Modules, Controllers, and Services
+- Prisma ORM Basics
+- Database Connection Setup
+
+---
+
+### 🧠 What I Understood Well
+
+- How NestJS organizes application logic using modules
+- Responsibilities of controllers and services
+- Basic dependency injection workflow
+- Prisma project setup and database connection process
+
+---
+
+### ⚠️ Challenges Faced
+
+- Understanding how different NestJS components interact
+- Configuring Prisma with the latest project setup
+- Understanding the overall request flow in NestJS applications
+
+---
+
+### 🔍 How I Solved Them
+
+- Followed the official NestJS documentation and examples
+- Explored project structure through hands-on practice
+- Tested Prisma configuration and database connection setup
+
+---
+
+### 📌 Pending Doubts
+
+- Prisma integration patterns
+
+---
+
+### 🚀 Next Plan
+
+- Build APIs using NestJS modules, controllers, and services
+- Learn DTOs, Validation Pipes, and Prisma CRUD operations
+
+---
+
+## 📅 Date: 2026-06-10
+
+### 📚 Topics Learned
+
+- Solved Prisma Connection Issues with Latest Prisma Version
+- Researched Version Compatibility and Configuration Changes
+- Learned NestJS Core Concepts in Depth:
+  - Modules
+  - Controllers
+  - Services
+  - DTOs
+  - Validation
+
+- Implemented Request Validation using DTOs
+- Explored Data Flow Between Controller, Service, and Database Layer
+
+---
+
+### 💡 Key Concepts
+
+- Prisma Configuration and Troubleshooting
+- DTO (Data Transfer Object)
+- Request Validation
+- NestJS Request Lifecycle
+- Controller-Service Architecture
+
+---
+
+### 🧠 What I Understood Well
+
+- How DTOs improve request validation and data consistency
+- The role of validation in API development
+- Complete request flow from controller to service layer
+- Prisma configuration and connection handling with newer versions
+
+---
+
+### ⚠️ Challenges Faced
+
+- Resolving Prisma connection errors caused by version updates
+- Understanding DTO validation decorators and validation flow
+
+---
+
+### 🔍 How I Solved Them
+
+- Debugged connection issues through testing and error analysis
+- Built sample implementations using DTOs and validation
+
+---
+
+### 📌 Pending Doubts
+
+- Global exception handling and error management in NestJS
+
+---
+
+### 🚀 Next Plan
+
+- Implement CRUD APIs using NestJS and Prisma
+- Learn Middleware, Guards, and Interceptors
