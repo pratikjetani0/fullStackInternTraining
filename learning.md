@@ -2029,3 +2029,160 @@ Here’s your updated daily progress with today’s actual work added. I cleaned
 
 - Implement CRUD APIs using NestJS and Prisma
 - Learn Middleware, Guards, and Interceptors
+
+## 📅 Date: 2026-06-11
+
+### 📚 Topics Learned
+
+- Continued NestJS Bookmark API Development
+- Implemented Authentication Module
+  - User Registration (Sign Up)
+  - User Login (Sign In)
+  - JWT Authentication
+  - JWT Strategy Configuration
+  - JWT Guard Implementation
+  - Protected Routes
+  - Custom Decorators for Current User Extraction
+- Implemented User Module
+  - User Controller
+  - User Service
+  - User Repository
+  - User Profile APIs
+- Implemented Bookmark Module
+  - Bookmark Controller
+  - Bookmark Service
+  - Bookmark Repository
+  - Create Bookmark API
+  - Get All Bookmarks API
+  - Get Single Bookmark API
+  - Update Bookmark API
+  - Delete Bookmark API
+
+- Performed Testing with Jest
+
+---
+
+### 💡 Key Concepts
+
+- JWT Authentication
+- Guards and Strategies
+- Custom Decorators
+- DTOs and Validation
+- Module-Based Architecture
+- Authorization and Protected Routes
+- Jest E2E Testing
+
+---
+
+### 🧠 What I Understood Well
+
+- Complete authentication flow using JWT in NestJS
+- How Guards and Strategies work together to protect APIs
+- Creating reusable custom decorators
+- Separation of concerns using Controller, Service, Repository, and Module layers
+- Repository pattern for database operations
+- Writing and executing E2E tests using Jest
+
+---
+
+### ⚠️ Challenges Faced
+
+- Understanding JWT Strategy and Guard workflow
+- Configuring authentication for protected endpoints
+- Setting up and understanding Jest testing workflow
+
+---
+
+### 🔍 How I Solved Them
+
+- Followed NestJS authentication documentation and implementation examples
+- Tested protected APIs using different authentication scenarios
+- Wrote and executed test cases to verify application behavior
+
+---
+
+### 📌 Pending Doubts
+
+- Role-Based Access Control (RBAC) implementation in NestJS
+
+---
+
+### 🚀 Next Plan
+
+- Learn Exception Filters and Global Error Handling
+- Implement Role-Based Authorization
+
+## 📅 Date: 2026-06-12
+
+### 📚 Topics Learned
+
+- Enhanced NestJS Bookmark API with Production-Level Error Handling
+- Implemented Global Exception Filter
+  - Centralized Error Handling
+  - Standardized Error Response Structure
+
+- Implemented Application Logging with Winston
+  - Winston Logger Configuration
+  - Console Logging
+  - File-Based Logging
+
+- Implemented Refresh Token Authentication Flow
+  - Access Token Generation
+  - Refresh Token Generation
+  - Refresh Token Storage
+  - Refresh Token Validation
+  - Token Rotation Strategy
+  - Secure Token Renewal Proces
+  - Generate New Refresh Token on Every Refresh Request
+
+---
+
+### 💡 Key Concepts
+
+- Global Exception Filters
+- Centralized Error Handling
+- Winston Logger
+- File and Console Logging
+- JWT Authentication
+- Access Tokens
+- Refresh Tokens
+- Refresh Token Rotation
+
+---
+
+### 🧠 What I Understood Well
+
+- How Global Exception Filters simplify application-wide error handling
+- Configuring Winston for production-level logging
+- Secure refresh token implementation and rotation strategy
+- Managing access and refresh token expiration effectively
+
+---
+
+### ⚠️ Challenges Faced
+
+- Designing a centralized exception handling mechanism
+- Configuring Winston transports and log formats
+- Understanding refresh token rotation workflow
+
+---
+
+### 🔍 How I Solved Them
+
+- Implemented a Global Exception Filter to handle all application exceptions consistently
+- Configured Winston with separate console and file transports
+- Implemented refresh token rotation and validated token lifecycle through testing
+
+---
+
+### 📌 Pending Doubts
+
+- Refresh token storage best practices for large-scale applications
+- Log aggregation and centralized log management solutions
+
+---
+
+### 🚀 Next Plan
+
+- Explore Role-Based Access Control (RBAC)
+- Implement API Documentation Using Swagger

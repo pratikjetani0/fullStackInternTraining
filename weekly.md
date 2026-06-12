@@ -802,3 +802,238 @@ Focused on:
 - Implement Refresh Token Mechanism
 - Add Logout Functionality
 - Product backend routes and conteroller
+
+## 📅 Week: (08/06/2026 - 12/06/2026)
+
+## ✅ Completed Tasks
+
+### POC1 Backend Completion
+
+- Successfully completed POC1 Backend Development using:
+  - Node.js
+  - Express.js
+  - PostgreSQL
+  - TypeORM
+
+---
+
+### Product Management Module
+
+- Create Product API
+- Get All Products API
+- Get Single Product API
+- Update Product API
+- Delete Product API
+
+---
+
+### Cart Management Module
+
+- Add Product to Cart
+- Get User Cart with Product Details
+- Update Cart Item Quantity
+- Remove Cart Item
+- Clear Entire Cart
+
+---
+
+### Database Management
+
+- Learned Database Seeder concepts and use cases
+- Executed Seeders for initial data population
+- Generated Migration Files from Entity Changes
+- Executed Migration Scripts
+- Managed database schema updates through migrations
+
+---
+
+### NestJS Learning & Architecture
+
+- Started NestJS Learning Phase
+- Explored NestJS Project Structure
+- Learned Core NestJS Concepts:
+  - Modules
+  - Controllers
+  - Services
+  - Dependency Injection
+
+- Understood NestJS Request Lifecycle
+
+---
+
+### Prisma ORM Integration
+
+- Configured Prisma ORM with NestJS
+- Established Database Connections
+- Resolved Prisma Version Compatibility Issues
+- Learned Prisma Configuration and Setup Process
+
+---
+
+### DTOs & Validation
+
+- Implemented DTOs (Data Transfer Objects)
+- Applied Request Validation using Validation Pipes
+- Learned Validation Decorators
+- Improved API Data Consistency and Validation Flow
+
+---
+
+### Authentication & Authorization
+
+Implemented complete Authentication Module:
+
+- User Registration (Sign Up)
+- User Login (Sign In)
+- JWT Authentication
+- JWT Strategy Configuration
+- JWT Guard Implementation
+- Protected Routes
+- Custom Decorators for Current User Extraction
+
+---
+
+### User Management Module
+
+Implemented User Module:
+
+- User Controller
+- User Service
+- User Repository
+- User Profile APIs
+
+---
+
+### Bookmark Management Module
+
+Implemented Bookmark Module:
+
+- Bookmark Controller
+- Bookmark Service
+- Bookmark Repository
+
+CRUD Operations:
+
+- Create Bookmark API
+- Get All Bookmarks API
+- Get Single Bookmark API
+- Update Bookmark API
+- Delete Bookmark API
+
+---
+
+### Testing
+
+- Performed API Testing
+- Learned Jest Testing Workflow
+- Executed E2E Testing using Jest
+
+---
+
+### Error Handling & Logging
+
+- Global Exception Filter
+
+Implemented Logging System:
+
+- Winston Logger Configuration
+- Console Logging
+- File-Based Logging
+
+---
+
+### Refresh Token Authentication
+
+- Access Token Generation
+- Refresh Token Generation
+- Refresh Token Storage
+- Refresh Token Validation
+- Refresh Token Rotation Strategy
+- Secure Token Renewal Process
+- Generate New Refresh Token on Every Refresh Request
+
+---
+
+## 💡 Key Concepts Learned
+
+- Product CRUD Operations
+- Shopping Cart Management
+- Database Seeders
+- TypeORM Migrations
+- NestJS Architecture
+- Dependency Injection
+- Modules, Controllers & Services
+- DTOs and Validation Pipes
+- Prisma ORM Integration
+- NestJS Request Lifecycle
+- JWT Authentication
+- Guards and Strategies
+- Custom Decorators
+- Repository Pattern
+- Global Exception Filters
+- Centralized Error Handling
+- Winston Logger
+- Refresh Token Authentication
+- Jest E2E Testing
+
+---
+
+## 📈 Major Achievements
+
+- Successfully Completed POC1 Backend Development
+- Built Complete Product Management Module
+- Built Complete Cart Management Module
+- Implemented Database Seeder Workflow
+- Learned and Integrated Prisma ORM with NestJS
+- Implemented DTO-Based Validation
+- Built Authentication System using JWT
+- Implemented Protected Routes with Guards and Strategies
+- Developed User and Bookmark Modules using Clean Architecture
+- Implemented Jest E2E Testing
+- Implemented Production-Level Global Exception Handling
+- Configured Winston Logger for File and Console Logging
+- Implemented Secure Refresh Token Authentication with Rotation Strategy
+
+---
+
+## 🔄 Work In Progress
+
+- Role-Based Access Control (RBAC) Implementation
+- API Documentation using Swagger
+
+---
+
+## ⏳ Pending Tasks
+
+- Role-Based Access Control (RBAC)
+- Swagger API Documentation
+- Refresh Token Storage Optimization
+- Audit Logging System
+
+---
+
+## ⚠️ Challenges / Blockers
+
+- Understanding NestJS Request Lifecycle
+- Configuring Prisma with Latest Versions
+- Resolving Prisma Connection Issues
+- Understanding JWT Strategy and Guard Workflow
+- Configuring Protected Routes
+- Designing Centralized Error Handling
+- Understanding Refresh Token Rotation Strategy
+
+---
+
+## 🧑‍🏫 Mentor Feedback Applied
+
+- Followed Modular Architecture Principles
+- Improved Separation of Concerns using Controller-Service-Repository Pattern
+- Enhanced Validation and Error Handling Practices
+
+---
+
+## 🎯 Plan for Next Week
+
+- Implement Role-Based Access Control (RBAC)
+- Integrate Swagger API Documentation
+- Start POC of NestJS
