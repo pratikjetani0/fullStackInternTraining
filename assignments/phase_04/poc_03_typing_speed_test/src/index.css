@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+:root {
+  --bg: #323437;
+  --card: #2c2e31;
+  --hover: #3b3d42;
+
+  --text: #d1d0c5;
+  --muted: #646669;
+
+  --accent: #e2b714;
+  --accent-h: #f3c623;
+
+  --error: #ca4754;
+  --border: #4a4c50;
+
+  --btn: #e2b714;
+  --btn-h: #f0c419;
+  --btn-text: #323437;
+
+  --nav: #646669;
+  --nav-h: #d1d0c5;
+  --nav-a: #e2b714;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  .keyboard-key .key-top {
+    transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    will-change: transform;
+  }
+
+  .keyboard-key:hover .key-top {
+    transform: translateY(2px);
+  }
+
+  .keyboard-key:active .key-top {
+    transform: translateY(4px);
+  }
+
+  .spark-particle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #facc15;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0 0 12px #facc15;
+    z-index: 10;
+  }
+
+  .spark-top-left {
+    top: 0;
+    left: 0;
+    --dx: -45px;
+    --dy: -45px;
+  }
+  .spark-top-right {
+    top: 0;
+    right: 0;
+    --dx: 45px;
+    --dy: -45px;
+  }
+  .spark-bottom-left {
+    bottom: 0;
+    left: 0;
+    --dx: -45px;
+    --dy: 45px;
+  }
+  .spark-bottom-right {
+    bottom: 0;
+    right: 0;
+    --dx: 45px;
+    --dy: 45px;
+  }
+
+  .keyboard-key:active .spark-particle {
+    animation: externalBurst 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  }
+}
+
+@keyframes externalBurst {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--dx), var(--dy)) scale(0.2);
+  }
+}
