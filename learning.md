@@ -2186,3 +2186,251 @@ Here’s your updated daily progress with today’s actual work added. I cleaned
 
 - Explore Role-Based Access Control (RBAC)
 - Implement API Documentation Using Swagger
+
+## 📅 Date: 2026-06-15
+
+### 📚 Topics Learned
+
+- Learned Microservices Architecture in NestJS
+
+- Integrated Microservices into Bookmark API
+  - Service-to-Service Communication
+  - Event-Based Architecture Concepts
+
+- Implemented Notification Microservice
+  - Dedicated Notification Service
+  - Decoupled Notification Logic
+
+- Implemented Email Service Using Nodemailer
+  - Email Configuration and Setup
+  - Dynamic Email Templates
+
+- Implemented Automated Email Notifications
+  - User Registration Email
+  - Bookmark Creation Email
+  - Event Triggered Notifications
+
+---
+
+### 💡 Key Concepts
+
+- NestJS Microservices
+- Service Communication
+- Event-Driven Architecture
+- Notification Service
+- Nodemailer
+- Email Templates
+- Asynchronous Processing
+
+---
+
+### 🧠 What I Understood Well
+
+- How microservices help separate business concerns
+- Communication between services in NestJS
+- Implementing a dedicated notification service
+- Sending automated emails using Nodemailer
+
+---
+
+### ⚠️ Challenges Faced
+
+- Understanding microservice architecture and communication flow
+- Configuring Nodemailer correctly
+- Triggering email notifications from business events
+
+---
+
+### 🔍 How I Solved Them
+
+- Studied NestJS microservice communication patterns and implemented them in the Bookmark API
+- Configured Nodemailer using environment variables
+- Created notification events for user registration and bookmark creation actions
+
+---
+
+### 📌 Pending Doubts
+
+- Email queue implementation for high-volume applications
+
+---
+
+### 🚀 Next Plan
+
+- Learn Monorepo Architecture
+- Design Scalable Folder Structure for Microservices
+
+---
+
+## 📅 Date: 2026-06-16
+
+### 📚 Topics Learned
+
+- Learned Monorepo Architecture in NestJS
+
+- Studied Scalable Folder Structures for Monolith and Microservices
+  - Shared Libraries
+  - Reusable Modules
+
+- Started POC1 Ecommerce Backend API Development
+  - Project Initialization
+  - Application Structure Setup
+
+- Implemented Database Design Using Prisma ORM
+  - Schema Design
+  - Model Relationships
+  - Migration Workflow
+
+- Created Database Migrations for Ecommerce Modules
+  - User Model
+  - Product Model
+  - Category Model
+  - Cart Model
+  - Order Related Tables
+
+---
+
+### 💡 Key Concepts
+
+- Monorepo Architecture
+- Microservice Folder Structure
+- Scalable Backend Design
+- Prisma ORM
+- Database Modeling
+- Prisma Migrations
+
+---
+
+### 🧠 What I Understood Well
+
+- Advantages of monorepo architecture for large-scale applications
+- Designing relational database schemas using Prisma
+- Managing database changes through migrations
+
+---
+
+### ⚠️ Challenges Faced
+
+- Designing a scalable project structure
+- Defining relationships between ecommerce entities
+- Understanding Prisma migration workflow
+
+---
+
+### 🔍 How I Solved Them
+
+- Researched industry-standard monorepo structures
+- Designed ecommerce models with proper relationships
+
+---
+
+### 📌 Pending Doubts
+
+- Managing multiple microservices inside a monorepo
+- Database scaling strategies for ecommerce systems
+
+---
+
+### 🚀 Next Plan
+
+- Implement Authentication and Authorization
+- Add RBAC and Security Features
+
+---
+
+## 📅 Date: 2026-06-17
+
+### 📚 Topics Learned
+
+- Implemented Authentication Module in POC1 Ecommerce API
+  - User Registration
+  - User Login
+  - JWT Authentication
+
+- Learned and Implemented NestJS Security Components
+  - Guards
+  - Strategies
+  - JWT Authentication Strategy
+
+- Implemented Refresh Token Authentication Flow
+  - Access Token Generation
+  - Refresh Token Generation
+  - Refresh Token Validation
+  - Refresh Token Rotation
+
+- Implemented Role-Based Access Control (RBAC)
+  - Role Management
+  - Protected Routes
+  - Authorization Guards
+
+- Enhanced Error Handling
+  - HTTP Exceptions
+  - Global Exception Filter
+
+- Developed Ecommerce Modules
+  - Product Module
+  - Cart Module
+
+- Implemented Role-Based Route Protection
+  - Admin Product Management
+  - User Cart Operations
+  - Protected API Endpoints
+
+---
+
+### 💡 Key Concepts
+
+- JWT Authentication
+- Access Tokens
+- Refresh Tokens
+- Refresh Token Rotation
+- Guards
+- Strategies
+- Role-Based Access Control (RBAC)
+- Authorization
+- Global Exception Filter
+- Product Module
+- Cart Module
+
+---
+
+### 🧠 What I Understood Well
+
+- Complete JWT authentication workflow in NestJS
+- Difference between authentication and authorization
+- Implementing RBAC using guards and decorators
+- Securing routes based on user roles
+- Structuring ecommerce modules with proper access control
+
+---
+
+### ⚠️ Challenges Faced
+
+- Understanding guard and strategy execution flow
+- Implementing refresh token rotation securely
+- Designing role-based route protection
+- Handling exceptions consistently across modules
+
+---
+
+### 🔍 How I Solved Them
+
+- Implemented JWT and Refresh Token strategies step by step
+- Added role guards and custom decorators for authorization
+- Applied a Global Exception Filter for centralized error handling
+- Tested authentication, authorization, product, and cart workflows thoroughly
+
+---
+
+### 📌 Pending Doubts
+
+- Advanced RBAC patterns for enterprise applications
+- Permission-based authorization vs role-based authorization
+
+---
+
+### 🚀 Next Plan
+
+- Implement Order Management Module
+- Integrate Payment Gateway
+- Add Unit and E2E Testing for Ecommerce Modules
