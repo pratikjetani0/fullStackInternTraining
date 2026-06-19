@@ -1037,3 +1037,261 @@ Implemented Logging System:
 - Implement Role-Based Access Control (RBAC)
 - Integrate Swagger API Documentation
 - Start POC of NestJS
+
+## 📅 Week: (15/06/2026 - 19/06/2026)
+
+## ✅ Completed Tasks
+
+### Microservices & Notification System
+
+- Learned NestJS Microservices Architecture
+- Integrated Microservices into Bookmark API
+- Implemented Service-to-Service Communication
+- Explored Event-Driven Architecture Concepts
+
+Implemented Notification Microservice:
+
+- Dedicated Notification Service
+- Decoupled Notification Logic
+- Event-Based Notification Processing
+
+Implemented Email Notification System:
+
+- Nodemailer Configuration
+- Dynamic Email Templates
+- User Registration Email Notifications
+- Bookmark Creation Email Notifications
+- Order Confirmation Emails
+- Payment Success Emails
+
+---
+
+### Monorepo Architecture & Project Setup
+
+- Learned Monorepo Architecture in NestJS
+- Studied Scalable Folder Structures for:
+  - Monolithic Applications
+  - Microservice Applications
+
+- Explored Shared Libraries and Reusable Modules
+
+Started POC1 Ecommerce Backend API:
+
+- Project Initialization
+- Application Structure Setup
+- Scalable Architecture Design
+
+---
+
+### Database Design & Prisma ORM
+
+- Configured Prisma ORM
+- Designed Ecommerce Database Schema
+- Implemented Entity Relationships
+- Generated and Executed Prisma Migrations
+
+Created Database Models:
+
+- User Model
+- Product Model
+- Cart Model
+- Order Model
+- Payment Related Tables
+
+---
+
+### Authentication & Authorization
+
+Implemented Complete Authentication System:
+
+- User Registration (Sign Up)
+- User Login (Sign In)
+- JWT Authentication
+- JWT Strategy
+- JWT Guards
+- Protected Routes
+
+Implemented Refresh Token Authentication:
+
+- Access Token Generation
+- Refresh Token Generation
+- Refresh Token Validation
+- Refresh Token Rotation
+- Secure Token Renewal Process
+
+Implemented Authorization Features:
+
+- Role-Based Access Control (RBAC)
+- Role Management
+- Authorization Guards
+- Role-Based Route Protection
+- Custom Decorators
+
+---
+
+### Ecommerce Modules
+
+Implemented Product Module:
+
+- Product CRUD Operations
+- Admin Product Management APIs
+
+Implemented Cart Module:
+
+- Add to Cart
+- Update Cart
+- Remove Cart Item
+- User Cart Operations
+
+Implemented Order Module:
+
+- Create Order API
+- Get Orders API
+- Cart to Order Conversion
+- Order Lifecycle Management
+
+Implemented Payment Module:
+
+- Payment Processing Flow
+- Payment Status Management
+- Payment Retry Mechanism
+- Success, Failed and Pending States
+
+- Automatic Cart Clearance After Successful Order Placement
+
+---
+
+### Notification Persistence
+
+- Integrated Notification Microservice with Ecommerce Modules
+- Order Confirmation Notifications
+- Payment Success Notifications
+- Stored Notifications in Database
+- Notification History Tracking
+
+---
+
+### Admin Dashboard APIs
+
+- User Summary API
+- Product Summary API
+- Order Summary API
+
+---
+
+### API Documentation
+
+Learned Swagger Documentation in NestJS
+
+- Swagger Setup
+- Controller Documentation
+- DTO Documentation
+- Request Documentation
+- Response Documentation
+- JWT Authentication Integration
+
+---
+
+### Error Handling & Security
+
+- HTTP Exceptions
+- Global Exception Filter
+- Centralized Error Management
+
+---
+
+## 💡 Key Concepts Learned
+
+- NestJS Microservices
+- Event-Driven Architecture
+- Service-to-Service Communication
+- Notification Microservice
+- Nodemailer
+- Email Templates
+- Monorepo Architecture
+- Scalable Folder Structure
+- Prisma ORM
+- Database Modeling
+- Prisma Migrations
+- JWT Authentication
+- Access Tokens
+- Refresh Tokens
+- Refresh Token Rotation
+- Guards and Strategies
+- Role-Based Access Control (RBAC)
+- Authorization
+- Product Management
+- Cart Management
+- Order Management
+- Payment Processing
+- Notification Persistence
+- Admin Dashboard APIs
+- Swagger Documentation
+- Global Exception Filters
+- Centralized Error Handling
+
+---
+
+## 📈 Major Achievements
+
+- Successfully Implemented NestJS Microservices Architecture
+- Built Dedicated Notification Microservice
+- Integrated Automated Email Notification System
+- Learned and Implemented Monorepo Architecture
+- Designed Complete Ecommerce Database using Prisma ORM
+- Implemented Secure JWT Authentication and Refresh Token Rotation
+- Implemented Role-Based Access Control (RBAC)
+- Built Product, Cart, Order, and Payment Modules
+- Integrated Notification System with Ecommerce Workflows
+- Implemented Notification Persistence and History Tracking
+- Developed Admin Dashboard Summary APIs
+- Integrated Swagger API Documentation
+- Implemented Production-Level Error Handling and Security
+
+---
+
+## 🔄 Work In Progress
+
+- Microservice Communication Optimization
+- Scalability Improvements
+- Advanced Notification Processing
+
+---
+
+## ⏳ Pending Tasks
+
+- Email Queue Implementation
+- Advanced Swagger Customization
+- Swagger API Versioning
+- Real Payment Gateway Integration
+- Permission-Based Authorization
+- Microservice Scaling Strategy
+
+---
+
+## ⚠️ Challenges / Blockers
+
+- Understanding Microservice Communication Flow
+- Configuring Nodemailer Correctly
+- Designing Scalable Monorepo Structure
+- Understanding Prisma Migration Workflow
+- Implementing Secure Refresh Token Rotation
+- Designing Role-Based Route Protection
+- Managing Order and Payment Lifecycle
+- Synchronizing Notification Events Across Services
+- Configuring Swagger Authentication Flows
+
+---
+
+## 🧑‍🏫 Mentor Feedback Applied
+
+- Followed Modular and Scalable Architecture Principles
+- Applied Event-Driven Design Concepts
+- Enhanced Error Handling and API Documentation Practices
+
+---
+
+## 🎯 Plan for Next Week
+
+- Optimize Microservice Communication
+- Implement Email Queue Processing

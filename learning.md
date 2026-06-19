@@ -2434,3 +2434,167 @@ Here’s your updated daily progress with today’s actual work added. I cleaned
 - Implement Order Management Module
 - Integrate Payment Gateway
 - Add Unit and E2E Testing for Ecommerce Modules
+
+## 📅 Date: 2026-06-18
+
+### 📚 Topics Learned
+
+- Continued Development of POC1 Ecommerce Backend API
+
+- Implemented Order Module
+  - Create Order API
+  - Get Orders API
+  - Order Creation Workflow
+  - Cart to Order Conversion
+
+- Implemented Payment Module
+  - Simulated Payment Processing
+  - Payment Status Management
+  - Payment Retry Mechanism
+
+- Added Payment Status Flows
+  - Success Status
+  - Failed Status
+  - Pending Status
+  - Retry Payment Flow
+
+- Implemented Cart Management During Order Creation
+  - Automatic Cart Clearance After Successful Order Placement
+
+- Integrated Notification Microservice
+  - Order Confirmation Notifications
+  - Payment Success Notifications
+
+- Implemented Notification Persistence
+  - Store Notifications in Database
+  - Notification History Tracking
+
+---
+
+### 💡 Key Concepts
+
+- Order Management
+- Payment Processing
+- Payment Status Lifecycle
+- Payment Retry Mechanism
+- Cart Management
+- Microservice Communication
+- Notification Service
+- Database Persistence
+
+---
+
+### 🧠 What I Understood Well
+
+- Order creation workflow from cart items
+- Simulating payment processing in an ecommerce system
+- Managing different payment states effectively
+- Integrating notifications using microservices
+- Storing notification records for future reference
+
+---
+
+### ⚠️ Challenges Faced
+
+- Designing the order placement workflow
+- Synchronizing notification events with order and payment actions
+- Clearing cart items after successful order creation
+
+---
+
+### 🔍 How I Solved Them
+
+- Implemented a structured order lifecycle from cart to order creation
+- Triggered notification events through the notification microservice
+- Stored notification records in the database and verified event execution through testing
+
+---
+
+### 📌 Pending Doubts
+
+- Integrating real payment gateways in production applications
+
+---
+
+### 🚀 Next Plan
+
+- Implement Admin Dashboard APIs
+- Add Email Notifications for Orders and Payments
+- Learn and Integrate Swagger Documentation
+
+---
+
+## 📅 Date: 2026-06-19
+
+### 📚 Topics Learned
+
+- Implemented Admin Dashboard APIs
+
+- Developed Dashboard Summary Endpoints
+  - User Summary API
+  - Product Summary API
+  - Order Summary API
+
+- Enhanced Notification Microservice
+  - Order Confirmation Email
+  - Payment Success Email
+  - Email-Based Notifications
+
+- Learned Swagger Documentation in NestJS
+
+- Integrated Swagger into POC1 Ecommerce API
+  - API Documentation Setup
+  - Route Documentation
+  - DTO Documentation
+  - Request and Response Documentation
+
+---
+
+### 💡 Key Concepts
+
+- Admin Dashboard APIs
+- Analytics and Summary Endpoints
+- Notification Microservice
+- Nodemailer
+- Email Templates
+- Swagger
+- JWT Authorization
+- API Testing
+
+---
+
+### 🧠 What I Understood Well
+
+- Building admin-focused dashboard APIs
+- Creating reusable email templates for notifications
+- Documenting APIs effectively using Swagger
+- Testing authenticated endpoints through Swagger UI
+
+---
+
+### ⚠️ Challenges Faced
+
+- Designing summary endpoints for dashboard data
+- Configuring Swagger decorators correctly
+- Integrating JWT authentication with Swagger
+
+---
+
+### 🔍 How I Solved Them
+
+- Implemented dedicated dashboard routes for users, products, and orders
+- Configured Swagger decorators for controllers, DTOs, and authentication flows
+- Added JWT Bearer Authentication support and verified protected routes through Swagger testing
+
+---
+
+### 📌 Pending Doubts
+
+- Advanced Swagger customization and versioning strategies
+- Email queue implementation for high-volume notification systems
+
+---
+
+### 🚀 Next Plan
+
+- Optimize Microservice Communication and Scalability
