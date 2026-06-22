@@ -1,44 +1,49 @@
-import ProductCard from '../components/ProductCard';
+import { useState } from "react";
 
-import { useProducts } from '../hooks/useProducts';
+import { useProducts } from "../hooks/useProducts";
+
+import Loader from "../../../components/ui/Loader";
+
+import EmptyState from "../../../components/ui/EmptyState";
+
+import ProductGrid from "../components/ProductGrid";
+
+import SearchInput from "../../../components/ui/SearchInput";
 
 export default function ProductsPage() {
-  const {
-    data: products,
-    isLoading,
-    isError,
-  } = useProducts();
+  const [search, setSearch] = useState("");
+
+  const { data: products, isLoading } = useProducts();
 
   if (isLoading) {
-    return (
-      <div className="p-10">
-        Loading Products...
-      </div>
-    );
+    return <Loader />;
   }
 
-  if (isError) {
-    return (
-      <div className="p-10">
-        Failed to load products
-      </div>
-    );
-  }
+  const filteredProducts =
+    products?.filter((product) =>
+      product.name.toLowerCase().includes(search.toLowerCase()),
+    ) ?? [];
 
   return (
-    <div className="container mx-auto p-6">
-      <h1 className="mb-6 text-3xl font-bold">
-        Products
-      </h1>
+    <div>
+      <div className="mb-10">
+        <h1 className="text-4xl font-bold">Discover Products</h1>
 
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {products?.map((product) => (
-          <ProductCard
-            key={product.id}
-            product={product}
-          />
-        ))}
+        <p className="mt-2 text-slate-500">Explore our collection.</p>
       </div>
+
+      <div className="mb-8">
+        <SearchInput value={search} onChange={setSearch} />
+      </div>
+
+      {filteredProducts.length === 0 ? (
+        <EmptyState
+          title="No Products Found"
+          description="Try another search."
+        />
+      ) : (
+        <ProductGrid products={filteredProducts} />
+      )}
     </div>
   );
 }
