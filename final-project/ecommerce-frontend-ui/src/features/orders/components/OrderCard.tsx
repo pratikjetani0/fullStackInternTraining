@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import OrderStatusBadge from "./OrderStatusBadge";
 
 interface Props {
@@ -45,6 +46,21 @@ export default function OrderCard({ order }: Props) {
 
           <p>{order.items?.length ?? 0}</p>
         </div>
+      </div>
+
+      <div className="mt-4">
+        <Link
+          to={`/orders/${order.id}`}
+          className="
+            rounded-lg
+            bg-black
+            px-4
+            py-2
+            text-white
+          "
+        >
+          View Details
+        </Link>
       </div>
     </div>
   );
