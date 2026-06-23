@@ -1,6 +1,7 @@
 import { useEffect } from "react";
-import { refresh } from "../../features/auth/api/auth.api";
 import { useAuthStore } from "../../features/auth/store/auth.store";
+import { api } from "../../services/axios";
+import { getProfile } from "../../features/auth/api/auth.api";
 
 export default function AuthProvider({
   children,
@@ -9,19 +10,26 @@ export default function AuthProvider({
 }) {
   const setAccessToken = useAuthStore((state) => state.setAccessToken);
 
-  useEffect(() => {
-    const restoreSession = async () => {
-      try {
-        const response = await refresh();
+  const setUser = useAuthStore((state) => state.setUser);
 
-        setAccessToken(response.accessToken);
+  useEffect(() => {
+    const restoreAuth = async () => {
+      try {
+        const refreshResponse = await api.post("/auth/refresh");
+
+        setAccessToken(refreshResponse.data.accessToken);
+
+        const profile = await getProfile();
+
+        setUser(profile);
       } catch {
-        console.log("No active session");
+        setUser(null);
+        setAccessToken(null);
       }
     };
 
-    restoreSession();
-  }, [setAccessToken]);
+    restoreAuth();
+  }, []);
 
-  return <>{children}</>;
+  return children;
 }

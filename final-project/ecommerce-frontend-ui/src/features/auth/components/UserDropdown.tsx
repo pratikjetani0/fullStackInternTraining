@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 
 import { useAuthStore } from "../store/auth.store";
+import { useLogout } from "../hooks/useLogout";
 
 export default function UserDropdown() {
   const user = useAuthStore((state) => state.user);
+  const logoutMutation = useLogout();
 
   return (
     <div
@@ -42,6 +44,7 @@ export default function UserDropdown() {
 
       <div className="border-t p-2">
         <button
+          onClick={() => logoutMutation.mutate()}
           className="
             w-full
             rounded-lg

@@ -151,4 +151,20 @@ export class AuthService {
       accessToken: tokens.accessToken,
     };
   }
+
+  //GET PROFILE
+  async getProfile(userId: string) {
+    const user = await this.authRepository.findUserById(userId);
+
+    if (!user) {
+      throw new UnauthorizedException();
+    }
+
+    return {
+      id: user?.id,
+      name: user?.name,
+      email: user?.email,
+      role: user?.role,
+    };
+  }
 }
