@@ -8,6 +8,7 @@ import { useRef, useState } from "react";
 import { useClickOutside } from "../../hooks/useClickOutside";
 import NavbarSearch from "./NavbarSearch";
 import UserDropdown from "../../features/auth/components/UserDropdown";
+import { useCart } from "../../features/cart/hooks/useCart";
 
 export default function Navbar() {
   // const user = useAuthStore((state) => state.user);
@@ -19,6 +20,7 @@ export default function Navbar() {
   const userRef = useRef<HTMLDivElement>(null);
 
   const { data: notifications } = useNotifications();
+  const { data: cart } = useCart();
 
   const unreadCount = notifications?.filter((item) => !item.isRead).length ?? 0;
 
@@ -29,6 +31,9 @@ export default function Navbar() {
   useClickOutside(userRef, () => {
     setOpenUserMenu(false);
   });
+
+  const cartCount =
+    cart?.items.reduce((total, item) => total + item.quantity, 0) ?? 0;
 
   return (
     <header className="sticky top-0 z-50 border-b bg-white">
@@ -85,9 +90,32 @@ export default function Navbar() {
             {openUserMenu && <UserDropdown />}
           </div>
 
-          <Link to="/cart" className="relative">
-            <ShoppingCart size={20} />
-          </Link>
+          <div className="relative">
+            <Link to="/cart">
+              <ShoppingCart size={20} />
+            </Link>
+
+            {cartCount > 0 && (
+              <span
+                className="
+                absolute
+                -right-2
+                -top-2
+                flex
+                h-5
+                w-5
+                items-center
+                justify-center
+                rounded-full
+                bg-red-500
+                text-xs
+                text-white
+              "
+              >
+                {cartCount}
+              </span>
+            )}
+          </div>
         </div>
       </div>
     </header>

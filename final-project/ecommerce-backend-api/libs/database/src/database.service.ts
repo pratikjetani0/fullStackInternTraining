@@ -7,8 +7,6 @@ import pkg from 'pg';
 @Injectable()
 export class DatabaseService extends PrismaClient implements OnModuleInit {
   constructor() {
-    console.log('DATABASE_URL =', process.env.DATABASE_URL);
-
     const { Pool } = pkg;
 
     const pool = new Pool({

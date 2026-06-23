@@ -3,11 +3,12 @@ import { useParams } from "react-router-dom";
 import { useProduct } from "../hooks/useProduct";
 
 import Loader from "../../../components/ui/Loader";
-
+import { useAddToCart } from "../../cart/hooks/useAddToCart";
 import Price from "../../../components/ui/Price";
 
 export default function ProductDetailsPage() {
   const { id } = useParams();
+  const { mutate, isPending } = useAddToCart();
 
   const { data: product, isLoading } = useProduct(id ?? "");
 
@@ -64,6 +65,12 @@ export default function ProductDetailsPage() {
 
         <div className="mt-10">
           <button
+            onClick={() =>
+              mutate({
+                productId: product.id,
+                quantity: 1,
+              })
+            }
             className="
               rounded-xl
               bg-black
@@ -74,7 +81,7 @@ export default function ProductDetailsPage() {
               hover:bg-slate-800
             "
           >
-            Add To Cart
+            {isPending ? "Adding..." : "Add To Cart"}
           </button>
         </div>
       </div>
