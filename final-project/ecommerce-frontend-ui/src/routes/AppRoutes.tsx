@@ -12,6 +12,9 @@ import CheckoutPage from "../features/payments/pages/CheckoutPage";
 import OrdersPage from "../features/orders/pages/OrdersPage";
 import ProfilePage from "../features/auth/pages/ProfilePage";
 import OrderDetailsPage from "../features/orders/pages/OrderDetailsPage";
+import AdminRoute from "./AdminRoute";
+import AdminProductsPage from "../features/admin/pages/AdminProductsPage";
+import CreateProductPage from "../features/admin/pages/CreateProductPage";
 
 export const router = createBrowserRouter([
   {
@@ -45,6 +48,22 @@ export const router = createBrowserRouter([
       {
         path: "/orders/:id",
         element: <OrderDetailsPage />,
+      },
+      {
+        path: "/admin/products",
+        element: (
+          <AdminRoute>
+            <AdminProductsPage />
+          </AdminRoute>
+        ),
+      },
+      {
+        path: "/admin/products/create",
+        element: (
+          <AdminRoute>
+            <CreateProductPage />
+          </AdminRoute>
+        ),
       },
     ],
   },
