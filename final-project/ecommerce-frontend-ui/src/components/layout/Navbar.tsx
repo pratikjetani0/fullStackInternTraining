@@ -1,19 +1,34 @@
 import { Link } from "react-router-dom";
-import { ShoppingCart, Bell } from "lucide-react";
+import { ShoppingCart, Bell, User } from "lucide-react";
 
-import { useAuthStore } from "../../features/auth/store/auth.store";
+// import { useAuthStore } from "../../features/auth/store/auth.store";
 import { useNotifications } from "../../features/notifications/hooks/useNotifications";
-import { useState } from "react";
 import NotificationDropdown from "../../features/notifications/components/NotificationDropdown";
+import { useRef, useState } from "react";
+import { useClickOutside } from "../../hooks/useClickOutside";
+import NavbarSearch from "./NavbarSearch";
+import UserDropdown from "../../features/auth/components/UserDropdown";
 
 export default function Navbar() {
-  const user = useAuthStore((state) => state.user);
+  // const user = useAuthStore((state) => state.user);
 
   const [openNotifications, setOpenNotifications] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  const [openUserMenu, setOpenUserMenu] = useState(false);
+  const userRef = useRef<HTMLDivElement>(null);
 
   const { data: notifications } = useNotifications();
 
   const unreadCount = notifications?.filter((item) => !item.isRead).length ?? 0;
+
+  useClickOutside(dropdownRef, () => {
+    setOpenNotifications(false);
+  });
+
+  useClickOutside(userRef, () => {
+    setOpenUserMenu(false);
+  });
 
   return (
     <header className="sticky top-0 z-50 border-b bg-white">
@@ -23,20 +38,14 @@ export default function Navbar() {
           Cartly
         </Link>
 
-        {/* NAVIGATION */}
-        <nav className="hidden items-center gap-8 md:flex">
-          <Link to="/" className="text-sm font-medium">
-            Products
-          </Link>
-
-          <Link to="/orders" className="text-sm font-medium">
-            Orders
-          </Link>
-        </nav>
+        {/* SERACH */}
+        <div className="flex flex-1 px-10 justify-center">
+          <NavbarSearch />
+        </div>
 
         {/* ACTIONS */}
         <div className="flex items-center gap-4">
-          <div className="relative">
+          <div ref={dropdownRef} className="relative">
             <button
               onClick={() => setOpenNotifications(!openNotifications)}
               className="relative"
@@ -68,13 +77,17 @@ export default function Navbar() {
             {openNotifications && <NotificationDropdown />}
           </div>
 
+          <div ref={userRef} className="relative">
+            <button onClick={() => setOpenUserMenu(!openUserMenu)}>
+              <User size={20} />
+            </button>
+
+            {openUserMenu && <UserDropdown />}
+          </div>
+
           <Link to="/cart" className="relative">
             <ShoppingCart size={20} />
           </Link>
-
-          <div className="hidden md:block">
-            <p className="text-sm font-medium">{user?.name ?? "Guest"}</p>
-          </div>
         </div>
       </div>
     </header>

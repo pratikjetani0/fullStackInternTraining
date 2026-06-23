@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import { useProducts } from "../hooks/useProducts";
 
 import Loader from "../../../components/ui/Loader";
@@ -7,13 +5,11 @@ import Loader from "../../../components/ui/Loader";
 import EmptyState from "../../../components/ui/EmptyState";
 
 import ProductGrid from "../components/ProductGrid";
-
-import SearchInput from "../../../components/ui/SearchInput";
+import { useSearchStore } from "../../../app/store/search.store";
 
 export default function ProductsPage() {
-  const [search, setSearch] = useState("");
-
   const { data: products, isLoading } = useProducts();
+  const search = useSearchStore((state) => state.search);
 
   if (isLoading) {
     return <Loader />;
@@ -30,10 +26,6 @@ export default function ProductsPage() {
         <h1 className="text-4xl font-bold">Discover Products</h1>
 
         <p className="mt-2 text-slate-500">Explore our collection.</p>
-      </div>
-
-      <div className="mb-8">
-        <SearchInput value={search} onChange={setSearch} />
       </div>
 
       {filteredProducts.length === 0 ? (
