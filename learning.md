@@ -2598,3 +2598,353 @@ Here’s your updated daily progress with today’s actual work added. I cleaned
 ### 🚀 Next Plan
 
 - Optimize Microservice Communication and Scalability
+
+---
+
+## 📅 Date: 2026-06-22
+
+### 📚 Topics Learned
+
+- Learned Database Sharding Concepts
+  - Horizontal Sharding
+  - Sharding Strategies
+  - Data Distribution
+
+- Explored Multiple Database Handling in Microservices
+  - Separate Database per Service
+  - Database Connection Management
+  - Service Isolation
+
+- Experimented with Frontend and Backend Integration
+  - API Integration
+  - Request and Response Handling
+  - Authentication Flow Testing
+
+---
+
+### 💡 Key Concepts
+
+- Database Sharding
+- Microservice Database Architecture
+- Multiple Database Connections
+- API Integration
+- REST Communication
+
+---
+
+### 🧠 What I Understood Well
+
+- How sharding improves scalability
+- Managing separate databases for microservices
+- Connecting frontend applications with backend APIs
+
+---
+
+### ⚠️ Challenges Faced
+
+- Understanding database partitioning strategies
+- Configuring multiple database connections
+- Handling API integration between frontend and backend
+
+---
+
+### 🔍 How I Solved Them
+
+- Studied different sharding approaches and use cases
+- Configured independent database connections for services
+- Tested API endpoints and verified frontend-backend communication
+
+---
+
+### 📌 Pending Doubts
+
+- Dynamic sharding implementation strategies
+
+---
+
+### 🚀 Next Plan
+
+- Start final integration of the Ecommerce backend using a production-ready architecture.
+
+---
+
+# 📅 Date: 2026-06-23
+
+### 📚 Topics Learned
+
+- Started Final Integration of Ecommerce Backend
+
+- Designed Backend Architecture
+  - Monolithic Architecture
+  - Domain-Driven Structure
+  - Mapper Pattern
+
+- Integrated TypeORM
+  - Entity Configuration
+  - Repository Setup
+  - Database Integration
+
+- Developed User Module
+  - User Entity
+  - CRUD Operations
+  - Repository Layer
+
+---
+
+### 💡 Key Concepts
+
+- Monolithic Architecture
+- Domain Architecture
+- Mapper Pattern
+- TypeORM
+- Repository Pattern
+- User Module
+
+---
+
+### 🧠 What I Understood Well
+
+- Organizing a scalable backend architecture
+- Separating domain, mapper, and infrastructure layers
+- Implementing TypeORM with clean architecture
+
+---
+
+### ⚠️ Challenges Faced
+
+- Designing the project folder structure
+- Mapping domain models with database entities
+- Configuring TypeORM repositories
+
+---
+
+### 🔍 How I Solved Them
+
+- Followed domain-driven architecture principles
+- Created dedicated mappers between entities and domain models
+- Configured TypeORM entities and repositories properly
+
+---
+
+### 📌 Pending Doubts
+
+- Best practices for scaling domain modules
+- Advanced mapping techniques for complex entities
+
+---
+
+### 🚀 Next Plan
+
+- Implement authentication, authorization, and core business modules.
+
+---
+
+## 📅 Date: 2026-06-24
+
+### 📚 Topics Learned
+
+- Developed Authentication Module
+
+- Implemented Authentication Features
+  - JWT Authentication
+  - Guards
+  - Role-Based Authorization
+  - Passport Strategies
+
+- Integrated Swagger Documentation
+  - API Documentation
+  - JWT Authentication Support
+  - DTO Documentation
+
+- Implemented Global HTTP Exception Filter
+- Developed Product Module
+- Developed Cart Module
+
+---
+
+### 💡 Key Concepts
+
+- JWT Authentication
+- Guards
+- Roles
+- Passport Strategies
+- Swagger
+- HTTP Exception Filter
+- Product Module
+- Cart Module
+
+---
+
+### 🧠 What I Understood Well
+
+- Securing APIs using JWT and Guards
+- Implementing role-based authorization
+- Handling exceptions globally
+- Building modular Product and Cart APIs
+
+---
+
+### ⚠️ Challenges Faced
+
+- Configuring authentication strategies
+- Integrating JWT with Swagger
+- Handling global exception responses
+
+---
+
+### 🔍 How I Solved Them
+
+- Configured Guards and Passport strategies correctly
+- Added Swagger Bearer Authentication support
+- Implemented a centralized HTTP Exception Filter for consistent API responses
+
+---
+
+### 📌 Pending Doubts
+
+- Advanced exception handling patterns
+
+---
+
+### 🚀 Next Plan
+
+- Complete Order, Payment, and Notification modules.
+
+---
+
+## 📅 Date: 2026-06-25
+
+### 📚 Topics Learned
+
+- Developed Order Module
+  - Order Creation
+  - Order Status Management
+  - Order Processing Flow
+
+- Developed Payment Module
+  - Payment Processing
+  - Payment Status Handling
+
+- Integrated Notification Microservice
+  - RabbitMQ Integration
+  - Event-Based Communication
+
+- Implemented Email Service
+  - Order Notification Emails
+  - Payment Confirmation Emails
+
+---
+
+### 💡 Key Concepts
+
+- Order Module
+- Payment Module
+- RabbitMQ
+- Event-Driven Architecture
+- Notification Microservice
+- Email Service
+
+---
+
+### 🧠 What I Understood Well
+
+- Event-driven communication using RabbitMQ
+- Managing order and payment workflows
+- Sending email notifications from microservices
+
+---
+
+### ⚠️ Challenges Faced
+
+- Configuring RabbitMQ communication
+- Synchronizing order and payment events
+- Triggering notifications after successful events
+
+---
+
+### 🔍 How I Solved Them
+
+- Configured RabbitMQ producers and consumers
+- Connected services through event-based messaging
+- Verified email notifications after order and payment completion
+
+---
+
+### 📌 Pending Doubts
+
+- Retry mechanisms for failed message processing
+
+---
+
+### 🚀 Next Plan
+
+- Complete notification management and admin dashboard features.
+
+---
+
+## 📅 Date: 2026-06-26
+
+### 📚 Topics Learned
+
+- Developed Notification Module
+  - Notification Storage
+  - Database Integration
+  - Notification APIs
+
+- Implemented Admin Dashboard
+
+- Developed Admin Management APIs
+  - User Management
+  - Order Management
+  - Payment Management
+  - Notification Management
+
+- Added Admin-Specific Protected Routes
+
+---
+
+### 💡 Key Concepts
+
+- Notification Module
+- Database Persistence
+- Admin Dashboard
+- Admin Routes
+- Role-Based Access Control
+- Analytics APIs
+
+---
+
+### 🧠 What I Understood Well
+
+- Managing notifications with database persistence
+- Building admin-specific APIs
+- Securing routes using role-based authorization
+- Organizing dashboard-related modules
+
+---
+
+### ⚠️ Challenges Faced
+
+- Designing admin management endpoints
+- Managing notification data efficiently
+- Applying authorization across admin routes
+
+---
+
+### 🔍 How I Solved Them
+
+- Implemented dedicated admin controllers and services
+- Stored notifications in the database for future retrieval
+- Applied role-based authorization to protect admin APIs
+
+---
+
+### 📌 Pending Doubts
+
+- Real-time notification delivery using WebSockets
+
+---
+
+### 🚀 Next Plan
+
+- Perform end-to-end testing, optimize performance, and prepare the project for production deployment.
